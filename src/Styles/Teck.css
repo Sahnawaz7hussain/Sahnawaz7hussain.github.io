@@ -1,0 +1,97 @@
+#teck {
+  background-color: #090514;
+  height: auto;
+  width: auto;
+  border: 0px solid red;
+  padding-top: 50px;
+}
+
+.headingTeck {
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1.5px;
+
+  margin-bottom: 6px;
+}
+.lineTeck {
+  width: 300px;
+  margin: auto;
+  margin-bottom: 25px;
+  border: 2px solid #dd9a05;
+}
+
+.iconsContainer {
+  height: auto;
+  width: 60%;
+  border: 0px solid red;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.box {
+  background-color: #1a1036;
+  display: block;
+  padding: 8px 0px;
+}
+.title {
+  color: white;
+  text-align: center;
+  font-size: 17px;
+}
+
+.icon {
+  width: 70px;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media screen and (max-width: 1024px) {
+  .headingTeck {
+    font-size: 35px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media screen and (max-width: 767px) {
+  .headingTeck {
+    font-size: 30px;
+  }
+  .lineTeck {
+    margin-bottom: 15px;
+  }
+  .icon {
+    width: 60px;
+  }
+}
+/* mobile */
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .iconsContainer {
+    /* background-color: purple; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .iconBox {
+    padding-top: 0px;
+  }
+  .headingTeck {
+    font-size: 30px;
+    width: 65%;
+  }
+  .lineTeck {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+  .icon {
+    width: 55px;
+  }
+}

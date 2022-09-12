@@ -1,0 +1,122 @@
+.mainContainer {
+  height: 550px;
+  width: auto;
+  border: 0px solid blue;
+  background-color: black;
+  padding: 50px 50px 30px 50px;
+}
+.heading {
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* margin-top: 40px; */
+  margin-bottom: 6px;
+}
+.line {
+  width: 200px;
+  margin: auto;
+  margin-bottom: 35px;
+  border: 2px solid #dd9a05;
+}
+.aboutContainer {
+  width: 90%;
+  border: 0px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 50px;
+  padding-left: 50px;
+}
+.codeGif {
+  width: 35%;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.paraContainer {
+  height: auto;
+  width: auto;
+  border: 0px solid blue;
+  margin: auto;
+  width: 45%;
+}
+.para {
+  color: white;
+  margin: auto;
+  text-align: justify;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  margin-bottom: 25px;
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mainContainer {
+    background-color: black;
+    border: 0px solid black;
+    height: 450px;
+    padding: 20px;
+  }
+  .aboutContainer {
+    height: auto;
+    border: 0px solid teal;
+    padding-left: 10px;
+    width: 95%;
+  }
+  .codeGif {
+    width: 40%;
+  }
+  .paraContainer {
+    border: 0px solid purple;
+    width: 50%;
+  }
+  .para {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 18px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media screen and (max-width: 767px) {
+  .mainContainer {
+    /* background-color: purple; */
+    height: auto;
+    border: 0px solid red;
+    padding: 30px;
+  }
+  .aboutContainer {
+    display: block;
+    border: 0px solid blue;
+    margin: auto;
+    padding: 0px;
+    width: 80%;
+  }
+  .codeGif {
+    display: none;
+  }
+  .paraContainer {
+    border: 0px solid teal;
+    width: auto;
+    margin: auto;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .mainContainer {
+    background-color: blue;
+  }
+  .aboutContainer {
+    width: 90%;
+  }
+  .para {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+}

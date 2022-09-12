@@ -1,0 +1,143 @@
+.homeContainer {
+  height: 620px;
+  width: auto;
+  background-color: #090514;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+}
+.headingContainer {
+  height: auto;
+  width: auto;
+  border: 0px solid blue;
+  margin: auto;
+  margin-left: 15%;
+}
+.headingContainer p {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.headingContainer h2 {
+  color: white;
+  font-size: 38px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  /* margin-top: -10px;  */
+}
+.headingContainer h1 {
+  color: #dd9a05;
+  font-size: 42px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1.5px;
+}
+.resumeBtn {
+  border: none;
+  color: white;
+  background-color: #dd9a05;
+  border: 2px solid #dd9a05;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 10px 14px;
+  margin-top: 40px;
+}
+.resumeBtn:hover {
+  border: none;
+  color: #dd9a05;
+  background-color: #090514;
+  border: 2px solid #dd9a05;
+  cursor: pointer;
+}
+.profileContainer {
+  height: auto;
+  width: auto;
+  border: 0px solid red;
+  margin: auto;
+}
+.profilePic {
+  width: 300px;
+  border-radius: 100%;
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media screen and (max-width: 1024px) {
+  .profilePic {
+    width: 250px;
+  }
+  .homeContainer {
+    /* background-color: blue; */
+    grid-template-columns: 65% 35%;
+  }
+  .headingContainer {
+    border: 2px solid #090514;
+    width: auto;
+  }
+  .headingContainer h2 {
+    font-size: 35px;
+  }
+  .headingContainer h1 {
+    /* width: 100%; */
+    font-size: 40px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media screen and (max-width: 767px) {
+  /* .homeContainer {
+    background-color: blue;
+  } */
+  .profilePic {
+    width: 200px;
+  }
+  .headingContainer h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+  .headingContainer h1 {
+    font-size: 35px;
+    letter-spacing: 1.2px;
+    width: auto;
+  }
+}
+/* mobile */
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .homeContainer {
+    height: 530px;
+    width: auto;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .headingContainer {
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .headingContainer p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .headingContainer h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .headingContainer h1 {
+    text-align: center;
+    font-size: 32px;
+    word-spacing: -2px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+  }
+  .resumeBtn {
+    display: block;
+    margin: auto;
+  }
+  .profilePic {
+    width: 180px;
+  }
+}

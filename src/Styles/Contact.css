@@ -1,0 +1,55 @@
+.contactContainer {
+  height: auto;
+  width: auto;
+  border: 2px solid blue;
+  background-color: teal;
+  padding-bottom: 20px;
+}
+
+.headingC {
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 50px;
+  margin-bottom: 6px;
+}
+.lineC {
+  width: 200px;
+  margin: auto;
+  margin-bottom: 50px;
+  border: 2px solid #dd9a05;
+}
+.paraC {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.cBox {
+  height: auto;
+  width: 350px;
+  border: 0px solid #dd9a05;
+  margin: auto;
+}
+.commonCBox {
+  height: 50px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.iconss {
+  color: black;
+  font-size: 35px;
+}
+.commonCBox p a,
+.commonCBox p {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}

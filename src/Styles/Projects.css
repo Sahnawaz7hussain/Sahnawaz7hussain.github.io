@@ -1,0 +1,222 @@
+.pro {
+  background-color: #090514;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.commonContainer {
+  height: 300px;
+  width: 80%;
+  border: 2px solid black;
+  background-color: black;
+  margin: auto;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+.headingPro {
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 50px;
+  margin-bottom: 6px;
+}
+.linePro {
+  width: 200px;
+  margin: auto;
+  margin-bottom: 35px;
+  border: 2px solid #dd9a05;
+}
+
+.commonPic {
+  width: 521px;
+  margin-left: 0px;
+  /* border-radius: 15px; */
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.projectDetails {
+  height: auto;
+  width: auto;
+  border: 0px solid yellow;
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.projectHeading {
+  color: #dd9a05;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.projectPara {
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
+.teckStack {
+  color: white;
+  font-size: 19px;
+}
+.teckSpan {
+  color: #dd9a05;
+}
+.linkingBtn {
+  border: 0px solid blue;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.live {
+  border: none;
+  color: white;
+  background-color: #dd9a05;
+  border: 1px solid #dd9a05;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 10px 14px;
+}
+.live:hover {
+  border: none;
+  color: #dd9a05;
+  background-color: #090514;
+  border: 1px solid #dd9a05;
+  cursor: pointer;
+  /* padding: 11px 15px; */
+}
+/* Media Query for Tablets Ipads portrait mode completed */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .commonContainer {
+    /* background-color: blue; */
+    height: 280px;
+  }
+  .commonPic {
+    width: 400px;
+    height: 275px;
+  }
+  .projectDetails {
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  .projectHeading {
+    margin-top: 0px;
+  }
+  .projectPara {
+    color: white;
+    font-size: 17px;
+    width: 90%;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    margin-top: 0px;
+  }
+  .teckStack {
+    color: white;
+    font-size: 18px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads completed */
+@media (min-width: 481px) and (max-width: 767px) {
+  .commonContainer {
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    background-color: blue;
+  }
+  .commonPic {
+    width: 100%;
+    height: 275px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+  }
+  .projectDetails {
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .projectHeading {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .projectPara {
+    font-size: 17px;
+    width: 85%;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    margin-top: 0px;
+    text-align: center;
+    margin: auto;
+  }
+  .teckStack {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border: 0px solid white;
+  }
+  .linkingBtn {
+    margin-top: 10px;
+  }
+}
+/* mobile */
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .commonContainer {
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+  }
+  .commonPic {
+    width: 100%;
+    height: 190px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+  }
+  .projectDetails {
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .projectHeading {
+    margin-top: 0px;
+    margin-bottom: 7px;
+    text-align: center;
+    font-size: 22px;
+  }
+  .projectPara {
+    font-size: 17px;
+    width: 85%;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    margin-top: 0px;
+    text-align: center;
+    margin: auto;
+  }
+  .teckStack {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border: 0px solid white;
+    margin-top: 0px;
+  }
+  .linkingBtn {
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+}

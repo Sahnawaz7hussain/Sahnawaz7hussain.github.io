@@ -1,0 +1,79 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.nav {
+  height: 50px;
+  width: auto;
+  border-bottom: 1px solid black;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  position: sticky;
+  top: 0;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.home,
+.about,
+.teck,
+.projects,
+.contact {
+  list-style-type: none;
+  padding: 0px 10px 0px 15px;
+  color: white;
+  cursor: pointer;
+}
+.mobile-menu-icon {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    background-color: teal;
+    height: 50px;
+    width: auto;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: red;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    z-index: 2000;
+  }
+  .home,
+  .about,
+  .projects,
+  .teck,
+  .contact {
+    color: white;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    background-color: purple;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+  }
+}
