@@ -1,5 +1,5 @@
 .pro {
-  background-color: #090514;
+  background-color: black;
   padding-bottom: 30px;
   padding-top: 20px;
 }
@@ -7,8 +7,8 @@
 .commonContainer {
   height: 300px;
   width: 80%;
-  border: 2px solid black;
-  background-color: black;
+  border: 1px solid black;
+  background-color: #090514;
   margin: auto;
   border-radius: 20px;
   display: flex;
@@ -47,7 +47,7 @@
   border: 0px solid yellow;
   margin: auto;
   margin-top: 10px;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 .projectHeading {
   color: #dd9a05;

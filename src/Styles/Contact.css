@@ -1,9 +1,9 @@
 .contactContainer {
   height: auto;
   width: auto;
-  border: 2px solid blue;
+  border-bottom: 2px solid red;
   background-color: teal;
-  padding-bottom: 20px;
+  padding-top: 50px;
 }
 
 .headingC {
@@ -12,13 +12,13 @@
   color: white;
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   margin-bottom: 6px;
 }
 .lineC {
   width: 200px;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border: 2px solid #dd9a05;
 }
 .paraC {
@@ -27,29 +27,77 @@
   font-size: 18px;
   width: 60%;
   margin: auto;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .cBox {
   height: auto;
-  width: 350px;
+  width: 80%;
   border: 0px solid #dd9a05;
   margin: auto;
-}
-.commonCBox {
-  height: 50px;
-  width: auto;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
   gap: 15px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.commonCBox {
+  /* height: 50px; */
+  width: auto;
+
+  border: 0px solid blue;
 }
 .iconss {
-  color: black;
+  color: #dd9a05;
   font-size: 35px;
 }
 .commonCBox p a,
 .commonCBox p {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 20px;
+  text-align: center;
+}
+/* Media Query for low resolution  Tablets, Ipads */
+@media screen and (max-width: 767px) {
+  .cBox {
+    /* width: 80%; */
+    border: 0px solid red;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 15px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .commonCBox {
+    margin-bottom: 20px;
+  }
+  .iconss {
+    display: block;
+    margin: auto;
+  }
+}
+/* mobile */
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .cBox {
+    display: block;
+  }
+  .commonCBox {
+    width: auto;
+    margin-bottom: 15px;
+  }
+  .iconss {
+    margin-left: 0%;
+  }
+  .paraC {
+    width: 90%;
+  }
+  .commonCBox p {
+    /* width: 70%; */
+    text-align: start;
+    overflow-wrap: break-word;
+  }
 }

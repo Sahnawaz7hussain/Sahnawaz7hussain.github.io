@@ -108,9 +108,9 @@
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
-  .mainContainer {
+  /* .mainContainer {
     background-color: blue;
-  }
+  } */
   .aboutContainer {
     width: 90%;
   }

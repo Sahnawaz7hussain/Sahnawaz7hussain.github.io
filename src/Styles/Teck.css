@@ -38,7 +38,10 @@
   background-color: #1a1036;
   display: block;
   padding: 8px 0px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
+
 .title {
   color: white;
   text-align: center;
@@ -55,6 +58,9 @@
 
 /* Media Query for Tablets Ipads portrait mode */
 @media screen and (max-width: 1024px) {
+  .iconsContainer {
+    width: 85%;
+  }
   .headingTeck {
     font-size: 35px;
   }
@@ -62,6 +68,12 @@
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media screen and (max-width: 767px) {
+  .iconsContainer {
+    width: 85%;
+    /* background-color: purple; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
   .headingTeck {
     font-size: 30px;
   }
@@ -78,7 +90,7 @@
   .iconsContainer {
     /* background-color: purple; */
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 15px;
   }
   .iconBox {
     padding-top: 0px;

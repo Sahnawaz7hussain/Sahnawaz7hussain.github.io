@@ -9,22 +9,25 @@ export default function Navbar() {
       <div>
         <Link to="hero" spy={true} smooth={true} offset={-40} duration={500}>
           <i>
-            <h3>S7H</h3>
+            <h3 className="logo">S7H</h3>
           </i>
         </Link>
       </div>
-      <ul
-        className={isMobile ? "nav-links-mobile" : "nav-links"}
-        onClick={() => setIsMobile(false)}
-      >
+      <ul className={isMobile ? "nav-links-mobile" : "nav-links"}>
         <Link to="hero" spy={true} smooth={true} offset={-45} duration={500}>
-          <li className="home">Home</li>
+          <li onClick={() => setIsMobile(false)} className="home">
+            Home
+          </li>
         </Link>
         <Link to="about" spy={true} smooth={true} offset={-40} duration={500}>
-          <li className="about">About</li>
+          <li onClick={() => setIsMobile(false)} className="about">
+            About
+          </li>
         </Link>
         <Link to="teck" spy={true} smooth={true} offset={-40} duration={500}>
-          <li className="teck">Teck</li>
+          <li onClick={() => setIsMobile(false)} className="teck">
+            Teck
+          </li>
         </Link>
         <Link
           to="projects"
@@ -33,10 +36,14 @@ export default function Navbar() {
           offset={-40}
           duration={500}
         >
-          <li className="projects">Projects</li>
+          <li onClick={() => setIsMobile(false)} className="projects">
+            Projects
+          </li>
         </Link>
         <Link to="contact" spy={true} smooth={true} offset={-40} duration={700}>
-          <li className="contact">Contack</li>
+          <li onClick={() => setIsMobile(false)} className="contact">
+            Contack
+          </li>
         </Link>
       </ul>
       <button
