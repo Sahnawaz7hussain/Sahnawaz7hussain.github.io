@@ -56,6 +56,9 @@
   display: none;
 }
 @media screen and (max-width: 768px) {
+  .nav {
+    background-color: #bc4123;
+  }
   .nav-links {
     display: none;
   }
@@ -63,7 +66,7 @@
     position: absolute;
     display: block;
     list-style: none;
-    background-color: #dd9a05;
+    background-color: #bc4123;
     left: 0;
     top: 53px;
     transition: all 1s ease-out;
@@ -86,10 +89,21 @@
     position: absolute;
     font-size: 30px;
     color: white;
-    background-color: #dd9a05;
+    background-color: #bc4123;
     border: none;
     outline: none;
     top: 10px;
     right: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .nav {
+    background-color: blue;
+  }
+  .mobile-menu-icon {
+    background-color: blue;
+  }
+  .nav-links-mobile {
+    background-color: blue;
   }
 }

@@ -60,6 +60,12 @@
 }
 /* Media Query for low resolution  Tablets, Ipads */
 @media screen and (max-width: 767px) {
+  .lineC {
+    border-color: #bc4123;
+  }
+  .contactContainer {
+    background-color: rgb(38, 4, 134);
+  }
   .cBox {
     /* width: 80%; */
     border: 0px solid red;
@@ -77,6 +83,7 @@
   .iconss {
     display: block;
     margin: auto;
+    color: #bc4123;
   }
 }
 /* mobile */
@@ -85,12 +92,16 @@
   .cBox {
     display: block;
   }
+  .lineC {
+    border-color: #dd9a05;
+  }
   .commonCBox {
     width: auto;
     margin-bottom: 15px;
   }
   .iconss {
     margin-left: 0%;
+    color: #dd9a05;
   }
   .paraC {
     width: 90%;

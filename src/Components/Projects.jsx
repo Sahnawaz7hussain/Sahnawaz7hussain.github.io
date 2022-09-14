@@ -20,8 +20,24 @@ export default function Projects() {
             Javascript
           </p>
           <div className="linkingBtn">
-            <button className="live">Live</button>
-            <button className="live">Github</button>
+            <button className="live">
+              <a
+                className="atag"
+                href="https://papaya-dango-552c77.netlify.app/"
+                target="_blank"
+              >
+                Deployed
+              </a>
+            </button>
+            <button className="live">
+              <a
+                className="atag"
+                href="https://github.com/11-DEEPAK-KUMAR-11/Bewakoof_website"
+                target="_blank"
+              >
+                Gihub
+              </a>
+            </button>
           </div>
         </div>
       </div>
@@ -39,8 +55,24 @@ export default function Projects() {
             Router
           </p>
           <div className="linkingBtn">
-            <button className="live">Live</button>
-            <button className="live">Github</button>
+            <button className="live">
+              <a
+                className="atag"
+                href="https://github.com/Sahnawaz7hussain/annoyed-wind-8656"
+                target="-blank"
+              >
+                Deployed
+              </a>
+            </button>
+            <button className="live">
+              <a
+                className="atag"
+                href="https://github.com/Sahnawaz7hussain/annoyed-wind-8656"
+                target="_blank"
+              >
+                Github
+              </a>
+            </button>
           </div>
         </div>
       </div>

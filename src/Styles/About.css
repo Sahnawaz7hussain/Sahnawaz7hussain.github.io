@@ -84,10 +84,13 @@
 /* Media Query for low resolution  Tablets, Ipads */
 @media screen and (max-width: 767px) {
   .mainContainer {
-    /* background-color: purple; */
+    background-color: #031d41;
     height: auto;
     border: 0px solid red;
     padding: 30px;
+  }
+  .line {
+    border-color: #bc4123;
   }
   .aboutContainer {
     display: block;
@@ -108,9 +111,12 @@
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
-  /* .mainContainer {
-    background-color: blue;
-  } */
+  .mainContainer {
+    background-color: #a52a2a;
+  }
+  .line {
+    border-color: orange;
+  }
   .aboutContainer {
     width: 90%;
   }

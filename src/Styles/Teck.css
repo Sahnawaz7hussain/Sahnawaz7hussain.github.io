@@ -41,7 +41,11 @@
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
+.box:hover {
+  background-color: #342169;
 
+  transition: all 1s ease-out;
+}
 .title {
   color: white;
   text-align: center;
@@ -68,11 +72,17 @@
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media screen and (max-width: 767px) {
+  #teck {
+    background-color: #0b172a;
+  }
   .iconsContainer {
     width: 85%;
     /* background-color: purple; */
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
+  }
+  .box {
+    background-color: #031d41;
   }
   .headingTeck {
     font-size: 30px;
@@ -87,6 +97,9 @@
 /* mobile */
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
+  #teck {
+    background-color: #800000;
+  }
   .iconsContainer {
     /* background-color: purple; */
     grid-template-columns: repeat(2, 1fr);
@@ -94,6 +107,13 @@
   }
   .iconBox {
     padding-top: 0px;
+  }
+  .box {
+    background-color: #a52a2a;
+  }
+  .box:hover {
+    background-color: #882673;
+    border-radius: 5px;
   }
   .headingTeck {
     font-size: 30px;

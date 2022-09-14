@@ -86,9 +86,12 @@
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media screen and (max-width: 767px) {
-  /* .homeContainer {
-    background-color: blue;
-  } */
+  .homeContainer {
+    background-color: #0b172a;
+  }
+  .headingContainer {
+    border: none;
+  }
   .profilePic {
     width: 200px;
   }
@@ -101,6 +104,16 @@
     font-size: 35px;
     letter-spacing: 1.2px;
     width: auto;
+    color: #bc4123;
+  }
+  .resumeBtn {
+    background-color: #bc4123;
+    border: 2px solid #bc4123;
+  }
+  .resumeBtn:hover {
+    background-color: #0b172a;
+    border: 2px solid #bc4123;
+    color: #bc4123;
   }
 }
 /* mobile */
@@ -111,6 +124,7 @@
     width: auto;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
+    background-color: #800000;
   }
   .headingContainer {
     margin: auto;
@@ -132,10 +146,20 @@
     word-spacing: -2px;
     letter-spacing: 0.5px;
     margin-bottom: 20px;
+    color: #ffa500;
   }
   .resumeBtn {
     display: block;
     margin: auto;
+
+    background-color: #ffa500;
+    border: 2px solid #ffa500;
+  }
+
+  .resumeBtn:hover {
+    background-color: #800000;
+    border: 2px solid #ffa500;
+    color: #ffa500;
   }
   .profilePic {
     width: 180px;

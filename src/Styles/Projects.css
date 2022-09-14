@@ -37,7 +37,7 @@
 .commonPic {
   width: 521px;
   margin-left: 0px;
-  /* border-radius: 15px; */
+
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
 }
@@ -54,6 +54,10 @@
   font-weight: 600;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+.atag {
+  text-decoration: none;
+  color: white;
 }
 .projectPara {
   color: white;
@@ -132,12 +136,18 @@
 
 /* Media Query for low resolution  Tablets, Ipads completed */
 @media (min-width: 481px) and (max-width: 767px) {
+  .pro {
+    background-color: #031d41;
+  }
+  .linePro {
+    border-color: #bc4123;
+  }
   .commonContainer {
     height: auto;
     display: block;
     box-sizing: border-box;
     padding-bottom: 20px;
-    background-color: blue;
+    background-color: #0b172a;
   }
   .commonPic {
     width: 100%;
@@ -153,6 +163,7 @@
   .projectHeading {
     margin-top: 10px;
     text-align: center;
+    color: #bc4123;
   }
   .projectPara {
     font-size: 17px;
@@ -172,15 +183,32 @@
   .linkingBtn {
     margin-top: 10px;
   }
+  .live {
+    background-color: #bc4123;
+    border-color: #bc4123;
+  }
+  .atag:hover {
+    color: #bc4123;
+  }
+  .live:hover {
+    border-color: #bc4123;
+  }
+  .teckSpan {
+    color: #bc4123;
+  }
 }
 /* mobile */
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
+  .pro {
+    background-color: #a52a2a;
+  }
   .commonContainer {
     height: auto;
     display: block;
     box-sizing: border-box;
     padding-bottom: 20px;
+    background-color: #800000;
   }
   .commonPic {
     width: 100%;
@@ -218,5 +246,9 @@
   .linkingBtn {
     margin-top: 10px;
     justify-content: space-between;
+    gap: 10px;
+  }
+  .live:hover {
+    background-color: #800000;
   }
 }
