@@ -58,7 +58,7 @@ export default function Projects() {
             <button className="live">
               <a
                 className="atag"
-                href="https://github.com/Sahnawaz7hussain/annoyed-wind-8656"
+                href="https://annoyed-wind-8656.vercel.app/"
                 target="-blank"
               >
                 Deployed
