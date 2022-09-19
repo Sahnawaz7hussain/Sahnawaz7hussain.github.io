@@ -98,12 +98,12 @@
 }
 @media (max-width: 480px) {
   .nav {
-    background-color: blue;
+    background-color: #090514;
   }
   .mobile-menu-icon {
-    background-color: blue;
+    background-color: #090514;
   }
   .nav-links-mobile {
-    background-color: blue;
+    background-color: #090514;
   }
 }

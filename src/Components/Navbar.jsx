@@ -40,6 +40,17 @@ export default function Navbar() {
             Projects
           </li>
         </Link>
+        <Link
+          to="statistics"
+          spy={true}
+          smooth={true}
+          offset={-40}
+          duration={700}
+        >
+          <li onClick={() => setIsMobile(false)} className="contact">
+            Statistics
+          </li>
+        </Link>
         <Link to="contact" spy={true} smooth={true} offset={-40} duration={700}>
           <li onClick={() => setIsMobile(false)} className="contact">
             Contact

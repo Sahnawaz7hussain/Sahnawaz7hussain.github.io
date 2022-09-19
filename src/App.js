@@ -5,6 +5,7 @@ import About from "./Components/About";
 import Teck from "./Components/Teck";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
+import Statistics from "./Components/Statistics";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Teck />
       <Projects />
+      <Statistics />
       <Contact />
     </div>
   );

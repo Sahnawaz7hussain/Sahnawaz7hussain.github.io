@@ -26,6 +26,7 @@ export default function Projects() {
                 className="atag"
                 href="https://papaya-dango-552c77.netlify.app/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Demo
               </a>
@@ -35,6 +36,7 @@ export default function Projects() {
                 className="atag"
                 href="https://github.com/11-DEEPAK-KUMAR-11/Bewakoof_website"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Gihub
               </a>
@@ -61,6 +63,7 @@ export default function Projects() {
                 className="atag"
                 href="https://isnt-sahnawaz7hussain-awesome.netlify.app/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Demo
               </a>
@@ -70,6 +73,7 @@ export default function Projects() {
                 className="atag"
                 href="https://github.com/Sahnawaz7hussain/exultant-oatmeal-7307"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Gihub
               </a>
@@ -96,6 +100,7 @@ export default function Projects() {
                 className="atag"
                 href="https://annoyed-wind-8656.vercel.app/"
                 target="-blank"
+                rel="noopener noreferrer"
               >
                 Demo
               </a>
@@ -105,6 +110,7 @@ export default function Projects() {
                 className="atag"
                 href="https://github.com/Sahnawaz7hussain/annoyed-wind-8656"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Github
               </a>
