@@ -17,7 +17,7 @@ export default function Projects() {
             It's an ecommerce website in which user can buy clothes & kits.
           </p>
           <p className="teckStack">
-            <span className="teckSpan"> Teck Stack:</span> HTML | CSS |
+            <span className="teckSpan"> Tech Stack:</span> HTML | CSS |
             Javascript
           </p>
           <div className="linkingBtn">
@@ -27,7 +27,7 @@ export default function Projects() {
                 href="https://papaya-dango-552c77.netlify.app/"
                 target="_blank"
               >
-                Deployed
+                Demo
               </a>
             </button>
             <button className="live">
@@ -52,7 +52,7 @@ export default function Projects() {
             products on rent.
           </p>
           <p className="teckStack">
-            <span className="teckSpan"> Teck Stack:</span> React | JSON-SERVER |
+            <span className="teckSpan"> Tech Stack:</span> React | JSON-SERVER |
             Heroku
           </p>
           <div className="linkingBtn">
@@ -62,7 +62,7 @@ export default function Projects() {
                 href="https://isnt-sahnawaz7hussain-awesome.netlify.app/"
                 target="_blank"
               >
-                Deployed
+                Demo
               </a>
             </button>
             <button className="live">
@@ -87,7 +87,7 @@ export default function Projects() {
             projects.
           </p>
           <p className="teckStack">
-            <span className="teckSpan">Teck Stack:</span> React | ChakraUI |
+            <span className="teckSpan">Tech Stack:</span> React | ChakraUI |
             Router
           </p>
           <div className="linkingBtn">
@@ -97,7 +97,7 @@ export default function Projects() {
                 href="https://annoyed-wind-8656.vercel.app/"
                 target="-blank"
               >
-                Deployed
+                Demo
               </a>
             </button>
             <button className="live">

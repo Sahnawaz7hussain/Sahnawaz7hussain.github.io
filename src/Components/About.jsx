@@ -20,7 +20,7 @@ export default function About() {
           </p>
           <p className="para">
             Intrested In: Coding | Data Structure & Algorithms | Playing
-            Badminton | Reading Books | Biographycal Movies.{" "}
+            Badminton | Reading Books | Biographical Movies.{" "}
           </p>
         </div>
       </div>

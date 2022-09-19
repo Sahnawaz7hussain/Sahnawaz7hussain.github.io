@@ -26,7 +26,7 @@ export default function Navbar() {
         </Link>
         <Link to="teck" spy={true} smooth={true} offset={-40} duration={500}>
           <li onClick={() => setIsMobile(false)} className="teck">
-            Teck
+            Tech
           </li>
         </Link>
         <Link
@@ -42,7 +42,7 @@ export default function Navbar() {
         </Link>
         <Link to="contact" spy={true} smooth={true} offset={-40} duration={700}>
           <li onClick={() => setIsMobile(false)} className="contact">
-            Contack
+            Contact
           </li>
         </Link>
       </ul>
