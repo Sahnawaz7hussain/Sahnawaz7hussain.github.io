@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import logopic from "../Images/myName.png";
 import "../Styles/Navbar.css";
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -9,7 +10,7 @@ export default function Navbar() {
       <div>
         <Link to="hero" spy={true} smooth={true} offset={-40} duration={500}>
           <i>
-            <h3 className="logo">S7H</h3>
+            <h3 className="logo">Sahnawaz Hussain </h3>
           </i>
         </Link>
       </div>
