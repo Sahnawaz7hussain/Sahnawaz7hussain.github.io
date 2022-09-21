@@ -2,6 +2,7 @@ import React from "react";
 import profilePic from "../Images/profile.jpg";
 // import pdf from "../Images/Sahnawaz_Hussain_resume.pdf";
 // import { HiDownload } from "react-icons/fa";
+
 import "../Styles/Home.css";
 export default function Home() {
   const onButtonClick = () => {

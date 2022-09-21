@@ -23,6 +23,30 @@
   align-items: center;
   justify-content: center;
 }
+.graph {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  box-shadow: rgba(17, 17, 51, 0.25) 0px 6px 12px -2px,
+    rgba(5, 9, 31, 0.3) 0px 3px 7px -3px;
+}
+.graphPic {
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .graph {
+    /* width: 100px; */
+    width: 70%;
+    border: 0px solid blue;
+  }
+  .graphPic {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 767px) {
   .main {
     background-color: #0b172a;
@@ -41,14 +65,29 @@
     margin-bottom: 15px;
     border-color: #bc4123;
   }
+  .graph {
+    border: 0px solid red;
+  }
+  .graphPic {
+    width: 100%;
+  }
 }
 /* mobile */
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
   .main {
     background-color: #800000;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .line {
     border: 2px solid #dd9a05;
+  }
+  .graph {
+    width: 100%;
+  }
+  .graphPic {
+    width: 100%;
   }
 }

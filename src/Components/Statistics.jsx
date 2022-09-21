@@ -1,5 +1,6 @@
 import GitHubCalendar from "react-github-calendar";
 import "../Styles/Statistics.css";
+
 export default function Statistics() {
   const selectLastHalfYear = (contributions) => {
     const currentYear = new Date().getFullYear();
@@ -17,6 +18,7 @@ export default function Statistics() {
       );
     });
   };
+
   return (
     <div id="statistics" className="main">
       <h1 className="heading">Statistics</h1>
@@ -28,6 +30,14 @@ export default function Statistics() {
           }}
           username="sahnawaz7hussain"
           transformData={selectLastHalfYear}
+        />
+      </div>
+      <br />
+      <div className="graph">
+        <img
+          className="graphPic"
+          alt="Sahnawaz Hussain's Activity Graph"
+          src={`https://activity-graph.herokuapp.com/graph?username=sahnawaz7hussain&bg_color=090514&color=dd9a05&line=dd9a05&point=dd9a05&hide_border=true`}
         />
       </div>
     </div>
