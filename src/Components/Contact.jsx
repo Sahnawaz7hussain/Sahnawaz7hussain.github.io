@@ -63,6 +63,7 @@ export default function Contact() {
             href="https://github.com/Sahnawaz7hussain"
             target="_blank"
             rel="noreferrer"
+            f
           >
             <AiFillLinkedin className="iconss" />
           </a>
