@@ -59,7 +59,13 @@ export default function Contact() {
 
       <div className="cBox">
         <div className="commonCBox">
-          <AiFillLinkedin className="iconss" />
+          <a
+            href="https://github.com/Sahnawaz7hussain"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiFillLinkedin className="iconss" />
+          </a>
           <p>
             <a
               href="https://www.linkedin.com/in/sahnawaz-hussain-350508219/"
@@ -71,7 +77,13 @@ export default function Contact() {
           </p>
         </div>
         <div className="commonCBox">
-          <AiFillGithub className="iconss" />
+          <a
+            href="https://github.com/Sahnawaz7hussain"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <AiFillGithub className="iconss" />
+          </a>
           <p>
             <a
               href="https://github.com/Sahnawaz7hussain"
