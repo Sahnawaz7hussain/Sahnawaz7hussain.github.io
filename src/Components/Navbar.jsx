@@ -68,6 +68,6 @@ export default function Navbar() {
           <i className="fas fa-bars"></i>
         )}
       </button>
-    </div>
+    </div> 
   );
 }

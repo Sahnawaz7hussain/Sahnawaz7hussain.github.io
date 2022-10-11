@@ -43,8 +43,11 @@
 }
 .box:hover {
   background-color: #342169;
-
-  transition: all 1s ease-out;
+  transition: all 0.5s ease-in-out;
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(1.2);
+  border-radius: 5px;
 }
 .title {
   color: white;
