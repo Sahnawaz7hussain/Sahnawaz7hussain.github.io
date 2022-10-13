@@ -40,13 +40,13 @@
   padding: 8px 0px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  transition: all 0.7s ease-in-out;
 }
 .box:hover {
-  background-color: #342169;
-  transition: all 0.5s ease-in-out;
+  background-color: #291b50;
   -ms-transform: scale(1); /* IE 9 */
   -webkit-transform: scale(1); /* Safari 3-8 */
-  transform: scale(1.2);
+  transform: scale(1.1);
   border-radius: 5px;
 }
 .title {

@@ -60,7 +60,7 @@ export default function Contact() {
       <div className="cBox">
         <div className="commonCBox">
           <a
-            href="https://github.com/Sahnawaz7hussain"
+            href="https://www.linkedin.com/in/sahnawaz-hussain-350508219/"
             target="_blank"
             rel="noreferrer"
             f

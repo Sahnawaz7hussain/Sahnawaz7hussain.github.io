@@ -28,32 +28,17 @@
   align-items: center;
   justify-content: space-around;
 }
-.home,
-.about,
-.teck,
-.projects,
-.contact {
+.tech-t {
   list-style-type: none;
   padding: 0px 10px 0px 15px;
   color: white;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
+  transition: all 0.9s ease-in-out;
 }
-.home:hover {
+.tech-t:hover {
   color: maroon;
-}
-.about:hover {
-  color: maroon;
-}
-.teck:hover {
-  color: maroon;
-}
-.projects:hover {
-  color: maroon;
-}
-.contact:hover {
-  color: maroon;
-  font-size: 17px;
+  text-decoration: underline;
 }
 .mobile-menu-icon {
   display: none;

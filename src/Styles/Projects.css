@@ -17,6 +17,7 @@
   margin-bottom: 50px;
   box-sizing: border-box;
   padding: 0px;
+  transition: 0.5s ease-in-out;
 }
 .headingPro {
   text-align: center;
@@ -44,8 +45,7 @@
 .commonContainer:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.1);
-  transition: all 0.5s ease-in;
+  transform: scale(1.03);
 }
 .projectDetails {
   height: auto;

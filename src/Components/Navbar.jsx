@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import logopic from "../Images/myName.png";
 import "../Styles/Navbar.css";
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -16,17 +15,17 @@ export default function Navbar() {
       </div>
       <ul className={isMobile ? "nav-links-mobile" : "nav-links"}>
         <Link to="hero" spy={true} smooth={true} offset={-45} duration={500}>
-          <li onClick={() => setIsMobile(false)} className="home">
+          <li onClick={() => setIsMobile(false)} className="tech-t">
             Home
           </li>
         </Link>
         <Link to="about" spy={true} smooth={true} offset={-40} duration={500}>
-          <li onClick={() => setIsMobile(false)} className="about">
+          <li onClick={() => setIsMobile(false)} className="tech-t">
             About
           </li>
         </Link>
         <Link to="teck" spy={true} smooth={true} offset={-40} duration={500}>
-          <li onClick={() => setIsMobile(false)} className="teck">
+          <li onClick={() => setIsMobile(false)} className="tech-t">
             Tech
           </li>
         </Link>
@@ -37,7 +36,7 @@ export default function Navbar() {
           offset={-40}
           duration={500}
         >
-          <li onClick={() => setIsMobile(false)} className="projects">
+          <li onClick={() => setIsMobile(false)} className="tech-t">
             Projects
           </li>
         </Link>
@@ -48,12 +47,12 @@ export default function Navbar() {
           offset={-40}
           duration={700}
         >
-          <li onClick={() => setIsMobile(false)} className="contact">
+          <li onClick={() => setIsMobile(false)} className="tech-t">
             Statistics
           </li>
         </Link>
         <Link to="contact" spy={true} smooth={true} offset={-40} duration={700}>
-          <li onClick={() => setIsMobile(false)} className="contact">
+          <li onClick={() => setIsMobile(false)} className="tech-t">
             Contact
           </li>
         </Link>
@@ -68,6 +67,6 @@ export default function Navbar() {
           <i className="fas fa-bars"></i>
         )}
       </button>
-    </div> 
+    </div>
   );
 }

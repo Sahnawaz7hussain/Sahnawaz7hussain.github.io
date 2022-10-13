@@ -2,10 +2,10 @@ import GitHubCalendar from "react-github-calendar";
 import "../Styles/Statistics.css";
 
 export default function Statistics() {
-  const selectLastHalfYear = (contributions) => {
+  const selectLastYear = (contributions) => {
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth();
-    const shownMonths = 6;
+    const shownMonths = 12;
 
     return contributions.filter((day) => {
       const date = new Date(day.date);
@@ -23,16 +23,18 @@ export default function Statistics() {
     <div id="statistics" className="main">
       <h1 className="heading">Statistics</h1>
       <hr className="line" />
+
       <div className="second">
         <GitHubCalendar
           style={{
             color: "white",
           }}
           username="sahnawaz7hussain"
-          transformData={selectLastHalfYear}
+          transformData={selectLastYear}
         />
       </div>
       <br />
+      {/* GRAPTH  */}
       <div className="graph">
         <img
           className="graphPic"
