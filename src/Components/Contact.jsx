@@ -1,4 +1,5 @@
 import React from "react";
+import { TbExternalLink } from "react-icons/tb";
 import "../Styles/Contact.css";
 import {
   AiFillLinkedin,
@@ -73,7 +74,7 @@ export default function Contact() {
               target="_blank"
               rel="noreferrer"
             >
-              LinkedIn
+              LinkedIn <TbExternalLink />
             </a>
           </p>
         </div>
@@ -91,7 +92,7 @@ export default function Contact() {
               target="_blank"
               rel="noreferrer"
             >
-              Github
+              Github <TbExternalLink />
             </a>
           </p>
         </div>
