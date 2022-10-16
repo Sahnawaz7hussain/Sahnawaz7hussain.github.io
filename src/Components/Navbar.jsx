@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { TbExternalLink } from "react-icons/tb";
 import "../Styles/Navbar.css";
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -56,6 +57,15 @@ export default function Navbar() {
             Contact
           </li>
         </Link>
+        <li className="tech-t">
+          <a
+            style={{ textDecoration: "none", color: "white" }}
+            href="https://drive.google.com/file/d/1RCx4lyd-eihb1IJCj8_fnTv37lUvlygS/view?usp=sharing"
+            target="_blank"
+          >
+            Resume <TbExternalLink />
+          </a>
+        </li>
       </ul>
       <button
         onClick={() => setIsMobile(!isMobile)}
