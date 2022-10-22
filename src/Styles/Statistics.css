@@ -24,10 +24,6 @@
   justify-content: center;
 }
 .graph {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-
   width: 70%;
   margin: auto;
   margin-top: 40px;
@@ -36,6 +32,18 @@
 }
 .graphPic {
   width: 100%;
+}
+.statsPicBox {
+  height: auto;
+  width: auto;
+  margin: auto;
+  border: 0px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 1024px) {
   .graph {
@@ -71,6 +79,12 @@
   .graphPic {
     width: 100%;
   }
+  .statsPicBox {
+    width: 90vw;
+  }
+  .statsPicBox img {
+    width: 90%;
+  }
 }
 /* mobile */
 /* Media Query for Mobile Devices */
@@ -89,5 +103,11 @@
   }
   .graphPic {
     width: 100%;
+  }
+  .statsPicBox {
+    width: 90vw;
+  }
+  .statsPicBox img {
+    width: 90%;
   }
 }

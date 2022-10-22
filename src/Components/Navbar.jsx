@@ -4,7 +4,11 @@ import { TbExternalLink } from "react-icons/tb";
 import "../Styles/Navbar.css";
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
-
+  // const [isActive, setIsActive] = useState(false);
+  // const handleNavClick = () => {
+  //   setIsActive(true);
+  // };
+  // console.log("isActive::", isActive);
   return (
     <div className="nav">
       <div>
@@ -62,6 +66,7 @@ export default function Navbar() {
             style={{ textDecoration: "none", color: "white" }}
             href="https://drive.google.com/file/d/1RCx4lyd-eihb1IJCj8_fnTv37lUvlygS/view?usp=sharing"
             target="_blank"
+            rel="noreferrer"
           >
             Resume <TbExternalLink />
           </a>

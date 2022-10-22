@@ -33,8 +33,10 @@
   padding: 0px 10px 0px 15px;
   color: white;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
   transition: all 0.9s ease-in-out;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 .tech-t:hover {
   color: maroon;

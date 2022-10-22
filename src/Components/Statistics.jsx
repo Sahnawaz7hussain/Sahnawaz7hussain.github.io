@@ -34,14 +34,27 @@ export default function Statistics() {
         />
       </div>
       <br />
-      {/* GRAPTH  */}
+      {/* GRAPTH  
       <div className="graph">
         <img
           className="graphPic"
           alt="Sahnawaz Hussain's Activity Graph"
           src={`https://activity-graph.herokuapp.com/graph?username=sahnawaz7hussain&bg_color=090514&color=dd9a05&line=dd9a05&point=dd9a05&hide_border=true`}
         />
+      </div>*/}
+      <div className="statsPicBox">
+        <img
+          className="statsPic"
+          src="https://github-readme-stats.vercel.app/api?username=sahnawaz7hussain&show_icons=true&locale=en&theme=radical"
+          alt="sahnawaz7hussain"
+        />
+        <img
+          className="statsPic"
+          src="https://github-readme-streak-stats.herokuapp.com/?user=sahnawaz7hussain&theme=radical"
+          alt="sahnawaz7hussain"
+        />
       </div>
+      <br />
     </div>
   );
 }

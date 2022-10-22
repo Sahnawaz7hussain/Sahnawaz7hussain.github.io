@@ -1,5 +1,6 @@
 .pro {
   background-color: black;
+  /* background-color: blue; */
   padding-bottom: 30px;
   padding-top: 20px;
 }
@@ -38,7 +39,6 @@
 .commonPic {
   width: 521px;
   margin-left: 0px;
-
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
 }
@@ -77,9 +77,11 @@
 .teckStack {
   color: white;
   font-size: 19px;
+  margin-top: 15px;
 }
 .teckSpan {
   color: #dd9a05;
+  margin-top: 15px;
 }
 .linkingBtn {
   border: 0px solid blue;
@@ -88,7 +90,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .live {
@@ -108,11 +110,24 @@
   cursor: pointer;
   /* padding: 11px 15px; */
 }
-/* Media Query for Tablets Ipads portrait mode completed */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1250px) {
   .commonContainer {
-    /* background-color: blue; */
+    width: 90%;
+    /* background-color: white; */
+  }
+  .commonPic {
+    width: 500px;
+  }
+  .linkingBtn {
+    margin-top: 20px;
+  }
+}
+/* Media Query for Tablets Ipads portrait mode completed */
+@media (min-width: 768px) and (max-width: 1026px) {
+  .commonContainer {
+    /* background-color: red; */
     height: 280px;
+    width: 85%;
   }
   .commonPic {
     width: 400px;
@@ -141,7 +156,17 @@
     font-size: 18px;
   }
 }
-
+@media (min-width: 768px) and (max-width: 905px) {
+  .commonPic {
+    width: 360px;
+  }
+  .projectHeading {
+    margin-bottom: 10px;
+  }
+  .linkingBtn {
+    margin-top: 20px;
+  }
+}
 /* Media Query for low resolution  Tablets, Ipads completed */
 @media (min-width: 481px) and (max-width: 767px) {
   .pro {

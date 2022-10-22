@@ -54,8 +54,10 @@
 .profileContainer {
   height: auto;
   width: auto;
-  border: 0px solid red;
+  border: 0px solid #dd9a05;
   margin: auto;
+  /* border-radius: 100%;
+  box-shadow: #dd9a05 0px 6px 0px 3px; */
 }
 .profilePic {
   width: 300px;

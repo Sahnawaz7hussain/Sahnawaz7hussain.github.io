@@ -28,7 +28,6 @@ const logos = [
   { i: postman, t: "Postman" },
 ];
 
-console.log(logos);
 export default function Teck() {
   return (
     <div id="teck">
@@ -36,7 +35,7 @@ export default function Teck() {
       <hr className="lineTeck" />
       <div className="iconsContainer">
         {logos.map((el) => (
-          <div className="box">
+          <div key={el.i} className="box">
             <img className="icon" src={el.i} alt="iconss" />
             <p className="title">{el.t}</p>
           </div>
