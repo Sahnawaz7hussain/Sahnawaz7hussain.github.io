@@ -35,7 +35,7 @@ export default function Home() {
         </button>
       </div>
       <div className="profileContainer">
-        <img className="profilePic" src={profilePic} alt="Profile Pic" />
+        <img className="profilePic" src={profilePic} alt="Hero Pic" />
       </div>
     </div>
   );

@@ -38,6 +38,7 @@
 
 .commonPic {
   width: 521px;
+  /* height: auto; */
   margin-left: 0px;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
@@ -91,6 +92,7 @@
   align-items: center;
   justify-content: space-evenly;
   margin-top: 30px;
+  /* margin-bottom: 20px; */
 }
 
 .live {
