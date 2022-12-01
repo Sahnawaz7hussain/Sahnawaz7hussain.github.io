@@ -23,25 +23,8 @@ export default function Statistics() {
     <div id="statistics" className="main">
       <h1 className="heading">Statistics</h1>
       <hr className="line" />
-
-      <div className="second">
-        <GitHubCalendar
-          style={{
-            color: "white",
-          }}
-          username="sahnawaz7hussain"
-          transformData={selectLastYear}
-        />
-      </div>
-      <br />
-      {/* GRAPTH  
-      <div className="graph">
-        <img
-          className="graphPic"
-          alt="Sahnawaz Hussain's Activity Graph"
-          src={`https://activity-graph.herokuapp.com/graph?username=sahnawaz7hussain&bg_color=090514&color=dd9a05&line=dd9a05&point=dd9a05&hide_border=true`}
-        />
-      </div>*/}
+      {/* GRAPTH
+       */}
       <div className="statsPicBox">
         <img
           className="statsPic"
@@ -55,6 +38,25 @@ export default function Statistics() {
         />
       </div>
       <br />
+      <br />
+
+      <div className="second">
+        <GitHubCalendar
+          style={{
+            color: "white",
+          }}
+          username="sahnawaz7hussain"
+          transformData={selectLastYear}
+        />
+      </div>
+
+      <div className="graph">
+        <img
+          className="graphPic"
+          alt="Sahnawaz Hussain's Activity Graph"
+          src={`https://activity-graph.herokuapp.com/graph?username=sahnawaz7hussain&bg_color=090514&color=dd9a05&line=dd9a05&point=dd9a05&hide_border=true`}
+        />
+      </div>
     </div>
   );
 }
