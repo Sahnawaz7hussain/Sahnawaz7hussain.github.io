@@ -17,11 +17,10 @@
   top: 0;
 }
 .logo {
-  color: white;
   cursor: pointer;
   margin-left: 25px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 25px;
+  border-radius: 100px;
+  width: 50px;
 }
 .nav-links {
   display: flex;
@@ -83,7 +82,6 @@
   }
   .logo {
     margin-left: 20px;
-    font-size: 22px;
   }
 }
 @media (max-width: 480px) {
@@ -98,6 +96,6 @@
   }
   .logo {
     margin-left: 10px;
-    font-size: 20px;
+    width: 35px;
   }
 }

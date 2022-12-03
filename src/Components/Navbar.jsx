@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { TbExternalLink } from "react-icons/tb";
 import "../Styles/Navbar.css";
+import profileLogo from "../Images/profile.jpg";
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
   // const [isActive, setIsActive] = useState(false);
@@ -14,7 +15,8 @@ export default function Navbar() {
       <div>
         <Link to="hero" spy={true} smooth={true} offset={-40} duration={500}>
           <i>
-            <h3 className="logo">Sahnawaz Hussain </h3>
+            {/* <h3 className="logo">Sahnawaz Hussain </h3> */}
+            <img src={profileLogo} className="logo" alt="logo" />
           </i>
         </Link>
       </div>

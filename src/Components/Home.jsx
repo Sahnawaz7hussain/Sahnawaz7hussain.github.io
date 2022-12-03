@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div className="homeContainer" id="hero">
       <div className="headingContainer">
-        <p>Hey I'm,</p>
+        <p>Hello, I'm</p>
         <h2>Sahnawaz Hussain</h2>
         <h1>Full Stack Web Developer.</h1>
         <button onClick={onButtonClick} className="resumeBtn">
