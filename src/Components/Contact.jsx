@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { TbExternalLink } from "react-icons/tb";
 import "../Styles/Contact.css";
 import {
@@ -7,15 +7,40 @@ import {
   AiOutlineMail,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
+import { FaAngleUp } from "react-icons/fa";
+
+//  MAIN FUNCTION
 export default function Contact() {
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
   function handleSubmit(e) {
     setTimeout(() => {
       e.target.reset();
     }, 3000);
   }
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    });
+  }, []);
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  //console.log("scro::", showScrollButton);
 
   return (
-    <div className="contactContainer" id="contact">
+    <div
+      className="contactContainer"
+      id="contact"
+      style={{ position: "relative" }}
+    >
       <h1 className="headingC">Let's Connect</h1>
       <hr className="lineC" />
       <p className="paraC">
@@ -104,6 +129,11 @@ export default function Contact() {
           <AiOutlineWhatsApp className="iconss" />
           <p>+91 7739920196</p>
         </div>
+      </div>
+      <div className="top-to-btm">
+        {showScrollButton && (
+          <FaAngleUp className="icon-position icon-style" onClick={goToTop} />
+        )}
       </div>
     </div>
   );
