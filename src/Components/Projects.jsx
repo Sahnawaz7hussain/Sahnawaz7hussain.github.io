@@ -12,14 +12,6 @@ export default function Projects() {
   const [showP2, setShowP2] = useState(false);
   const projects = [
     {
-      image: bewakoof,
-      name: "bewakoof.com",
-      desc: " It's an ecommerce website in which user can buy clothes & kits.",
-      techStack: "HTML | CSS | Javascript",
-      github: "https://github.com/11-DEEPAK-KUMAR-11/Bewakoof_website",
-      demo: "https://papaya-dango-552c77.netlify.app/",
-    },
-    {
       image: hello_bonsai,
       name: "hellobonsai.com",
       desc: "It's a freelance business management application that allows freelancers to work with clients.",
@@ -27,6 +19,15 @@ export default function Projects() {
       github: "https://github.com/AnkitParte/astute-line-8992",
       demo: "https://hellobonsai-deploy.vercel.app/",
     },
+    {
+      image: bewakoof,
+      name: "bewakoof.com",
+      desc: " It's an ecommerce website in which user can buy clothes & kits.",
+      techStack: "HTML | CSS | Javascript",
+      github: "https://github.com/11-DEEPAK-KUMAR-11/Bewakoof_website",
+      demo: "https://papaya-dango-552c77.netlify.app/",
+    },
+
     {
       image: myhours,
       name: "myhours.com",
@@ -69,7 +70,14 @@ export default function Projects() {
       <hr className="linePro" />
       {projects.map((item) => (
         <div key={item.name} className="commonContainer">
-          <img className="commonPic" src={item.image} alt={item.name} />
+          <a
+            className="atag"
+            href={`${item.demo}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="commonPic" src={item.image} alt={item.name} />
+          </a>
           <div className="projectDetails">
             <h1 className="projectHeading">Clone: {item.name}</h1>
             <p className="projectPara">{item.desc}</p>
@@ -78,26 +86,22 @@ export default function Projects() {
               {item.techStack}
             </p>
             <div className="linkingBtn">
-              <button className="live">
-                <a
-                  className="atag"
-                  href={`${item.demo}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Demo
-                </a>
-              </button>
-              <button className="live">
-                <a
-                  className="atag"
-                  href={item.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Github
-                </a>
-              </button>
+              <a
+                className="atag"
+                href={`${item.demo}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="live">Demo</button>
+              </a>
+              <a
+                className="atag"
+                href={item.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="live">Github</button>
+              </a>
             </div>
           </div>
         </div>
@@ -106,7 +110,14 @@ export default function Projects() {
         {showP2 &&
           projects2.map((item) => (
             <div key={item.name} className="commonContainer">
-              <img className="commonPic" src={item.image} alt={item.name} />
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href={`${item.demo}`}
+                className="atag"
+              >
+                <img className="commonPic" src={item.image} alt={item.name} />
+              </a>
               <div className="projectDetails">
                 <h1 className="projectHeading">Name: {item.name}</h1>
                 <p className="projectPara">{item.desc}</p>
@@ -115,26 +126,22 @@ export default function Projects() {
                   {item.techStack}
                 </p>
                 <div className="linkingBtn">
-                  <button className="live">
-                    <a
-                      className="atag"
-                      href={`${item.demo}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Demo
-                    </a>
-                  </button>
-                  <button className="live">
-                    <a
-                      className="atag"
-                      href={item.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Github
-                    </a>
-                  </button>
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href={`${item.demo}`}
+                    className="atag"
+                  >
+                    <button className="live">Demo</button>
+                  </a>
+                  <a
+                    className="atag"
+                    href={item.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="live">Github</button>
+                  </a>
                 </div>
               </div>
             </div>
