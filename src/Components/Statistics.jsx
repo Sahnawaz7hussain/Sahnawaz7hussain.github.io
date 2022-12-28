@@ -54,7 +54,7 @@ export default function Statistics() {
         <img
           className="graphPic"
           alt="Sahnawaz Hussain's Activity Graph"
-          src={`https://activity-graph.herokuapp.com/graph?username=sahnawaz7hussain&bg_color=090514&color=dd9a05&line=dd9a05&point=dd9a05&hide_border=true`}
+          src={`https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sahnawaz7hussain&theme=radical`}
         />
       </div>
     </div>

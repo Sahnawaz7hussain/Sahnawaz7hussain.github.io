@@ -25,12 +25,13 @@
   margin: auto;
   color: white;
   font-size: 30px;
+  font-weight: 400;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 50px;
   margin-bottom: 6px;
 }
 .linePro {
-  width: 200px;
+  width: 10%;
   margin: auto;
   margin-bottom: 35px;
   border: 2px solid #dd9a05;

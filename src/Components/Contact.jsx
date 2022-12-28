@@ -12,7 +12,7 @@ import { FaAngleUp } from "react-icons/fa";
 //  MAIN FUNCTION
 export default function Contact() {
   const [showScrollButton, setShowScrollButton] = useState(false);
-
+  const [scrolls, setScrolls] = useState(0);
   function handleSubmit(e) {
     setTimeout(() => {
       e.target.reset();
@@ -20,6 +20,7 @@ export default function Contact() {
   }
   useEffect(() => {
     window.addEventListener("scroll", () => {
+      setScrolls(window.screenY);
       if (window.scrollY > 400) {
         setShowScrollButton(true);
       } else {
@@ -33,7 +34,6 @@ export default function Contact() {
       behavior: "smooth",
     });
   };
-  //console.log("scro::", showScrollButton);
 
   return (
     <div

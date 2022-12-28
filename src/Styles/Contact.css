@@ -11,12 +11,13 @@
   margin: auto;
   color: white;
   font-size: 30px;
+  font-weight: 400;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* margin-top: 50px; */
   margin-bottom: 6px;
 }
 .lineC {
-  width: 200px;
+  width: 12%;
   margin: auto;
   margin-bottom: 30px;
   border: 2px solid #dd9a05;
