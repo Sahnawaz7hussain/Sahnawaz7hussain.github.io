@@ -24,9 +24,11 @@
 .logo {
   cursor: pointer;
   margin-left: 25px;
-  border-radius: 100px;
-  width: 40px;
-  width: 40px;
+  /* border-radius: 100px; */
+  width: 80px;
+  width: 80px;
+  filter: invert(1);
+  background: transparent;
 }
 .nav-links {
   display: flex;

@@ -3,14 +3,15 @@ import { Link } from "react-scroll";
 import { TbExternalLink } from "react-icons/tb";
 import "../Styles/Navbar.css";
 import profileLogo from "../Images/profile.jpg";
+import shlogo from "../Images/sss.png";
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
-  const [navBG, setNavGB] = useState(true);
+  const [navBG, setNavGB] = useState(false);
   const [isActive, setIsActive] = useState("");
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 10) {
+      if (window.scrollY > 40) {
         setNavGB(true);
       } else {
         setNavGB(false);
@@ -28,16 +29,16 @@ export default function Navbar() {
       } else if (x > 1200 && x < 2000) {
         setIsActive("tech");
       }
+      console.log("scrolll: ", x);
     });
   }, []);
-  // console.log("isActive: ", isActive);
   return (
     <div className={!navBG ? "nav navColor" : "nav"}>
       <div>
         <Link to="hero" spy={true} smooth={true} offset={-40} duration={500}>
           <i>
             {/* <h3 className="logo">Sahnawaz Hussain </h3> */}
-            <img src={profileLogo} className="logo" alt="logo" />
+            <img src={shlogo} className="logo" alt="logo" />
           </i>
         </Link>
       </div>

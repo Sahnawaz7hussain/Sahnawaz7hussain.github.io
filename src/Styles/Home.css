@@ -16,23 +16,26 @@
 .headingContainer p {
   color: white;
   font-weight: bold;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Roboto", sans-serif;
 }
 .headingContainer h2 {
   color: white;
   font-size: 38px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
   letter-spacing: 1.5px;
   font-weight: 500;
   margin-bottom: 10px;
-  /* margin-top: -10px;  */
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
 }
 .headingContainer h1 {
   color: #dd9a05;
   font-size: 42px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  letter-spacing: 1.5px;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  letter-spacing: 1.2px;
+  font-family: "Roboto", sans-serif;
 }
 .resumeBtn {
   border: none;

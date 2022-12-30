@@ -1,9 +1,14 @@
 .pro {
   background-color: black;
-  /* background-color: blue; */
   padding-bottom: 30px;
   padding-top: 20px;
 }
+/* .allProjects {
+  height: auto;
+  width: auto;
+  margin: auto;
+  border: 2px solid green;
+} */
 
 .commonContainer {
   height: 300px;
@@ -45,8 +50,8 @@
   border-top-left-radius: 20px;
 }
 .commonContainer:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  -ms-transform: scale(0.01); /* IE 9 */
+  -webkit-transform: scale(0.01); /* Safari 3-8 */
   transform: scale(1.03);
 }
 .projectDetails {

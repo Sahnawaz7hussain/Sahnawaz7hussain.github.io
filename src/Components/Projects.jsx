@@ -68,44 +68,47 @@ export default function Projects() {
     <div id="projects" className="pro">
       <h1 className="headingPro">My Projects</h1>
       <hr className="linePro" />
-      {projects.map((item) => (
-        <div key={item.name} className="commonContainer">
-          <a
-            className="atag"
-            href={`${item.demo}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className="commonPic" src={item.image} alt={item.name} />
-          </a>
-          <div className="projectDetails">
-            <h1 className="projectHeading">Clone: {item.name}</h1>
-            <p className="projectPara">{item.desc}</p>
-            <p className="teckStack">
-              <span className="teckSpan">Tech Stack: </span>
-              {item.techStack}
-            </p>
-            <div className="linkingBtn">
-              <a
-                className="atag"
-                href={`${item.demo}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="live">Demo</button>
-              </a>
-              <a
-                className="atag"
-                href={item.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="live">Github</button>
-              </a>
+      <div className="allProjects">
+        {projects.map((item) => (
+          <div key={item.name} className="commonContainer">
+            <a
+              className="atag"
+              href={`${item.demo}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="commonPic" src={item.image} alt={item.name} />
+            </a>
+            <div className="projectDetails">
+              <h1 className="projectHeading">Clone: {item.name}</h1>
+              <p className="projectPara">{item.desc}</p>
+              <p className="teckStack">
+                <span className="teckSpan">Tech Stack: </span>
+                {item.techStack}
+              </p>
+              <div className="linkingBtn">
+                <a
+                  className="atag"
+                  href={`${item.demo}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="live">Demo</button>
+                </a>
+                <a
+                  className="atag"
+                  href={item.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="live">Github</button>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
+
       <div>
         {showP2 &&
           projects2.map((item) => (
