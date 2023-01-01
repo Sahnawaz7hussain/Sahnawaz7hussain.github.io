@@ -63,7 +63,6 @@ export default function Projects() {
       demo: "https://todo-crud-nine.vercel.app/",
     },
   ];
-
   return (
     <div id="projects" className="pro">
       <h1 className="headingPro">My Projects</h1>

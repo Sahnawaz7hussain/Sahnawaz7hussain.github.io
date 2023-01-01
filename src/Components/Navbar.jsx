@@ -29,7 +29,7 @@ export default function Navbar() {
       } else if (x > 1200 && x < 2000) {
         setIsActive("tech");
       }
-      console.log("scrolll: ", x);
+      //  console.log("scrolll: ", x);
     });
   }, []);
   return (

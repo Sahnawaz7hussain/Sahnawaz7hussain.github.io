@@ -1,7 +1,14 @@
+import { useEffect } from "react";
+import { useState } from "react";
 import GitHubCalendar from "react-github-calendar";
 import "../Styles/Statistics.css";
 
 export default function Statistics() {
+  let [wWidth, setWWidth] = useState(0);
+  useEffect(() => {
+    let windowWidth = window.innerWidth;
+    setWWidth(windowWidth);
+  }, []);
   const selectLastYear = (contributions) => {
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth();
@@ -18,7 +25,7 @@ export default function Statistics() {
       );
     });
   };
-
+  console.log(wWidth, "window width");
   return (
     <div id="statistics" className="main">
       <h1 className="heading">Statistics</h1>
@@ -45,8 +52,17 @@ export default function Statistics() {
           style={{
             color: "white",
           }}
+          // transformData={selectLastYear}
           username="sahnawaz7hussain"
-          transformData={selectLastYear}
+          // year={"last"}
+          blockMargin={4}
+          blockRadius={8}
+          blockSize={14}
+          color={wWidth <= 360 ? "" : "#FD428D"}
+          fontSize={16}
+          // showWeekdayLabels={true}
+          transformTotalCount={false}
+          // weekStart={1}
         />
       </div>
 

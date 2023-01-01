@@ -6,7 +6,7 @@
 .nav {
   height: 80px;
   width: auto;
-  border-bottom: 0px solid #dd9a05;
+  /* border-bottom: 0px solid #dd9a05; */
   background-color: #dd9a05;
   display: flex;
   align-items: center;
@@ -24,7 +24,6 @@
 .logo {
   cursor: pointer;
   margin-left: 25px;
-  /* border-radius: 100px; */
   width: 80px;
   width: 80px;
   filter: invert(1);
@@ -80,6 +79,7 @@
     background-color: #0b172a;
     transition: all 0.8s ease;
     border: none;
+    border-bottom: 1px solid #0b172a;
   }
   .tech-t {
     color: white;
@@ -100,7 +100,7 @@
     background-color: transparent;
   }
   .logo {
-    margin-left: 20px;
+    margin-left: 10px;
   }
 }
 @media (max-width: 480px) {
@@ -114,8 +114,7 @@
     background-color: #090514;
   }
   .logo {
-    margin-left: 10px;
-    width: 35px;
+    margin-left: -10px;
   }
   .navColor {
     background-color: #800000;
