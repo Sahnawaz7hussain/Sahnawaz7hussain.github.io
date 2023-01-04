@@ -28,8 +28,14 @@ export default function Navbar() {
         setIsActive("about");
       } else if (x > 1200 && x < 2000) {
         setIsActive("tech");
+      } else if (x > 2050 && x < 3350) {
+        setIsActive("projects");
+      } else if (x > 2055 && x < 4450) {
+        setIsActive("statistics");
+      } else {
+        setIsActive("contact");
       }
-      //  console.log("scrolll: ", x);
+      // console.log("scrolll: ", x);
     });
   }, []);
   return (
@@ -82,7 +88,10 @@ export default function Navbar() {
           offset={-40}
           duration={500}
         >
-          <li onClick={() => setIsMobile(false)} className="tech-t">
+          <li
+            onClick={() => setIsMobile(false)}
+            className={isActive === "projects" ? "tech-t isActive" : "tech-t"}
+          >
             Projects
           </li>
         </Link>
@@ -93,12 +102,18 @@ export default function Navbar() {
           offset={-40}
           duration={700}
         >
-          <li onClick={() => setIsMobile(false)} className="tech-t">
+          <li
+            onClick={() => setIsMobile(false)}
+            className={isActive === "statistics" ? "tech-t isActive" : "tech-t"}
+          >
             Statistics
           </li>
         </Link>
         <Link to="contact" spy={true} smooth={true} offset={-40} duration={700}>
-          <li onClick={() => setIsMobile(false)} className="tech-t">
+          <li
+            onClick={() => setIsMobile(false)}
+            className={isActive === "contact" ? "tech-t isActive" : "tech-t"}
+          >
             Contact
           </li>
         </Link>

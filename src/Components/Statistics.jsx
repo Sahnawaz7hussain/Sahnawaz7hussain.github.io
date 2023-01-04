@@ -8,24 +8,7 @@ export default function Statistics() {
   useEffect(() => {
     let windowWidth = window.innerWidth;
     setWWidth(windowWidth);
-  }, []);
-  const selectLastYear = (contributions) => {
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth();
-    const shownMonths = 12;
-
-    return contributions.filter((day) => {
-      const date = new Date(day.date);
-      const monthOfDay = date.getMonth();
-
-      return (
-        date.getFullYear() === currentYear &&
-        monthOfDay > currentMonth - shownMonths &&
-        monthOfDay <= currentMonth
-      );
-    });
-  };
-  console.log(wWidth, "window width");
+  }, [window.innerWidth]);
   return (
     <div id="statistics" className="main">
       <h1 className="heading">Statistics</h1>
@@ -52,17 +35,14 @@ export default function Statistics() {
           style={{
             color: "white",
           }}
-          // transformData={selectLastYear}
           username="sahnawaz7hussain"
-          // year={"last"}
+          year={"last"}
           blockMargin={4}
           blockRadius={8}
           blockSize={14}
           color={wWidth <= 360 ? "" : "#FD428D"}
           fontSize={16}
-          // showWeekdayLabels={true}
           transformTotalCount={false}
-          // weekStart={1}
         />
       </div>
 

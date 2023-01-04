@@ -7,6 +7,8 @@ import hello_bonsai from "../Images/hello_bonsai.png";
 import cartWebsite from "../Images/CartFunctionality.png";
 import MusicApp from "../Images/MusicApp.png";
 import todoappp from "../Images/todoApp.png";
+import { TbExternalLink } from "react-icons/tb";
+
 import { useState } from "react";
 export default function Projects() {
   const [showP2, setShowP2] = useState(false);
@@ -35,6 +37,14 @@ export default function Projects() {
       techStack: "React | ChakraUI | Router",
       github: "https://github.com/Sahnawaz7hussain/annoyed-wind-8656",
       demo: "https://annoyed-wind-8656.vercel.app/",
+    },
+    {
+      image: MusicApp,
+      name: "Simple Music App",
+      desc: " It's a Simple Music app Where user go through musics stored in our server. Focused on Filter and Sorting functionality.",
+      techStack: "ReactJS | Redux | json-server",
+      github: "https://github.com/Sahnawaz7hussain/Music-app",
+      demo: "https://musicapp-rho.vercel.app/",
     },
   ];
   const projects2 = [
@@ -70,6 +80,7 @@ export default function Projects() {
       <div className="allProjects">
         {projects.map((item) => (
           <div key={item.name} className="commonContainer">
+            {/*PROJECT HERO IMAGE  */}
             <a
               className="atag"
               href={`${item.demo}`}
@@ -78,29 +89,42 @@ export default function Projects() {
             >
               <img className="commonPic" src={item.image} alt={item.name} />
             </a>
+            {/* PROJECT DETAILS BOX  */}
             <div className="projectDetails">
-              <h1 className="projectHeading">Clone: {item.name}</h1>
+              {/* PROJECT NAME  */}
+              <h1 className="projectHeading">{item.name}</h1>
+              {/* PROJECT DESCRIPTION  */}
               <p className="projectPara">{item.desc}</p>
+              {/* TECH STACHS USED IN PROJECT  */}
               <p className="teckStack">
                 <span className="teckSpan">Tech Stack: </span>
                 {item.techStack}
               </p>
+              {/* GITHUB AND DEPLOYED BUTTONS BOX  */}
               <div className="linkingBtn">
+                {/* DEPLOYED LINK BUTTON  */}
                 <a
-                  className="atag"
+                  className="buttonsAnchor"
                   href={`${item.demo}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="live">Demo</button>
+                  <div className="live">
+                    <p>Demo</p>
+                    <TbExternalLink />
+                  </div>
                 </a>
+                {/* GIT HUB REPO BUTTON  */}
                 <a
-                  className="atag"
+                  className="buttonsAnchor"
                   href={item.github}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="live">Github</button>
+                  <div className="live">
+                    <p>Github</p>
+                    <TbExternalLink />
+                  </div>
                 </a>
               </div>
             </div>
@@ -108,7 +132,7 @@ export default function Projects() {
         ))}
       </div>
 
-      <div>
+      {/* <div>
         {showP2 &&
           projects2.map((item) => (
             <div key={item.name} className="commonContainer">
@@ -158,7 +182,7 @@ export default function Projects() {
         >
           {showP2 ? "Show Less" : "Show More"}
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
