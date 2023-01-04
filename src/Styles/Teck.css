@@ -1,9 +1,14 @@
 #teck {
   background-color: #090514;
-  height: auto;
-  width: auto;
-  border: 0px solid red;
-  padding-top: 50px;
+  /* border: 3px solid red; */
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .headingTeck {
@@ -25,8 +30,8 @@
 
 .iconsContainer {
   height: auto;
-  width: 60%;
-  border: 0px solid red;
+  width: 100%;
+  /* border: 2px solid blue; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
@@ -41,6 +46,7 @@
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   transition: all 0.7s ease-in-out;
+  border: 1px solid lightgray;
 }
 .box:hover {
   background-color: #291b50;
@@ -64,25 +70,27 @@
 }
 
 /* Media Query for Tablets Ipads portrait mode */
-@media screen and (max-width: 1024px) {
-  .iconsContainer {
-    width: 85%;
-  }
-  .headingTeck {
-    font-size: 35px;
+
+@media screen and (max-width: 1200px) {
+  #teck {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
-
 /* Media Query for low resolution  Tablets, Ipads */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 820px) {
   #teck {
     background-color: #0b172a;
+    padding-top: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
   }
   .iconsContainer {
-    width: 85%;
     /* background-color: purple; */
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
+    /* border: 2px solid greenyellow; */
   }
   .box {
     background-color: #031d41;
@@ -99,14 +107,21 @@
 }
 /* mobile */
 /* Media Query for Mobile Devices */
+
 @media (max-width: 480px) {
   #teck {
     background-color: #800000;
+    /* border: 2px solid green; */
+    padding-left: 1%;
+    padding-right: 1%;
+    /* padding: 0; */
   }
+
   .iconsContainer {
-    /* background-color: purple; */
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    /* border: 2px solid blue; */
   }
   .iconBox {
     padding-top: 0px;

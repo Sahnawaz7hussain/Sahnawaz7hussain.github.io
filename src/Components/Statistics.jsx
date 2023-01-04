@@ -8,7 +8,7 @@ export default function Statistics() {
   useEffect(() => {
     let windowWidth = window.innerWidth;
     setWWidth(windowWidth);
-  }, [window.innerWidth]);
+  }, []);
   return (
     <div id="statistics" className="main">
       <h1 className="heading">Statistics</h1>

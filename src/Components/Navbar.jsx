@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { TbExternalLink } from "react-icons/tb";
 import "../Styles/Navbar.css";
-import profileLogo from "../Images/profile.jpg";
+// import profileLogo from "../Images/profile.jpg";
 import shlogo from "../Images/sss.png";
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -22,22 +22,23 @@ export default function Navbar() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       let x = window.scrollY;
-      if (x > 0 && x < 600) {
+      if (x > 0 && x < 525) {
         setIsActive("home");
-      } else if (x > 600 && x < 1200) {
+      } else if (x > 600 && x < 1150) {
         setIsActive("about");
-      } else if (x > 1200 && x < 2000) {
+      } else if (x > 1200 && x < 1900) {
         setIsActive("tech");
-      } else if (x > 2050 && x < 3350) {
+      } else if (x > 2000 && x < 3330) {
         setIsActive("projects");
-      } else if (x > 2055 && x < 4450) {
+      } else if (x > 3360 && x < 4400) {
         setIsActive("statistics");
-      } else {
+      } else if (x > 4430) {
         setIsActive("contact");
       }
       // console.log("scrolll: ", x);
     });
   }, []);
+  //  console.log("atice: ", isActive);
   return (
     <div className={!navBG ? "nav navColor" : "nav"}>
       <div>

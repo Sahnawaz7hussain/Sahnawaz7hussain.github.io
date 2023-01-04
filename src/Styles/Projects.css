@@ -47,7 +47,6 @@
   align-items: center;
   margin-top: 0;
   border-radius: 5px;
-  /* transition: 0.5s ease-in-out; */
 }
 .atag {
   height: 300px;
@@ -62,17 +61,16 @@
   object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  /* object-fit: cover; */
-  /* border-bottom-left-radius: 20px; */
-  /* border-top-left-radius: 20px; */
+  transition: 0.5s ease-in-out;
 }
-/* 
-.commonContainer:hover {
+
+.commonPic:hover {
   -ms-transform: scale(0.01);
   -webkit-transform: scale(0.01);
-  transform: scale(1.03);
+  transform: scale(1.02);
+  /* transition: 0.4s ease-in-out; */
 }
- */
+
 .projectDetails {
   min-height: 260px;
   width: auto;

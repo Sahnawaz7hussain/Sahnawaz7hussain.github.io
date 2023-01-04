@@ -6,7 +6,6 @@
 .nav {
   height: 80px;
   width: auto;
-  /* border-bottom: 0px solid #dd9a05; */
   background-color: #dd9a05;
   display: flex;
   align-items: center;
@@ -15,10 +14,11 @@
   z-index: 10;
   position: sticky;
   top: 0;
+  transition: 0.8s ease-in-out;
 }
 .navColor {
   background-color: #090514;
-  transition: all 0.8s ease;
+  /* transition: all 0.8s ease-in; */
   border: none;
 }
 .logo {
@@ -50,12 +50,18 @@
 }
 .isActive {
   color: maroon;
-  /* text-decoration: underline; */
+  background: transparent;
+  /* //box-shadow: 0px 3px 5px 1px maroon; */
+  border-radius: 50px;
+  font-size: 22px;
+  text-decoration: underline;
+  /* //animation: pulse 2s infinite; */
 }
+
 .mobile-menu-icon {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
   .nav {
     background-color: #bc4123;
   }

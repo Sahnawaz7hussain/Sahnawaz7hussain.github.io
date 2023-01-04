@@ -1,7 +1,7 @@
 .contactContainer {
   height: auto;
   width: auto;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid lightgrey;
   background-color: black;
   padding-top: 50px;
 }
@@ -40,13 +40,13 @@
   justify-content: space-around;
   gap: 15px;
   margin-top: 80px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 .commonCBox {
   /* height: 50px; */
   width: auto;
 
-  border: 0px solid blue;
+  /* border: 1px solid blue; */
 }
 .iconss {
   color: #dd9a05;
@@ -61,7 +61,7 @@
 }
 /*Form css */
 .formBox {
-  border: 0px solid blue;
+  /* border: 1px solid green; */
   width: 500px;
   margin: auto;
   margin-top: 30px;
@@ -93,9 +93,9 @@ textArea {
   padding: 5px 10px;
   color: white;
 }
-.textArea:focus-visible {
+/* .textArea:focus-visible {
   border: 2px solid blue;
-}
+} */
 .submitButton {
   background-color: #dd9a05;
   color: white;
@@ -113,6 +113,12 @@ textArea {
   color: #dd9a05;
   border: 2px solid #dd9a05;
   cursor: pointer;
+}
+.copyright {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  margin: 15px 0;
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
