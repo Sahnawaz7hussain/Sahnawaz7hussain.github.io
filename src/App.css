@@ -25,3 +25,14 @@
   background: maroon;
   transition: 0.5s ease-in-out;
 }
+@media screen and (max-width: 780px) {
+  ::-webkit-scrollbar-thumb {
+    background: #bc4123;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0b172a;
+    transition: 0.5s ease-in-out;
+  }
+}

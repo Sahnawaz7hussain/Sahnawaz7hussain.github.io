@@ -25,13 +25,15 @@ export default function Home() {
         <h1>Full Stack Web Developer.</h1>
         <button onClick={onButtonClick} className="resumeBtn">
           Resume{" "}
-          <BiDownload
-            style={{
-              marginLeft: "8px",
-              fontSize: "20px",
-              alignmentBaseline: "0px",
-            }}
-          />
+          <span>
+            <BiDownload
+              style={{
+                marginLeft: "8px",
+                fontSize: "20px",
+                // alignmentBaseline: "0px",
+              }}
+            />
+          </span>
         </button>
       </div>
       <div className="profileContainer">
