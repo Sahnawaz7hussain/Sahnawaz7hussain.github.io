@@ -30,12 +30,12 @@ export default function Navbar() {
         setIsActive("tech");
       } else if (x > 2000 && x < 3330) {
         setIsActive("projects");
-      } else if (x > 3360 && x < 4400) {
+      } else if (x > 3360 && x < 4100) {
         setIsActive("statistics");
-      } else if (x > 4430) {
+      } else if (x > 4180) {
         setIsActive("contact");
       }
-      // console.log("scrolll: ", x);
+      //   console.log("scrolll: ", x);
     });
   }, []);
   //  console.log("atice: ", isActive);

@@ -29,7 +29,6 @@ export default function Statistics() {
       </div>
       <br />
       <br />
-
       <div className="second">
         <GitHubCalendar
           style={{
@@ -46,7 +45,6 @@ export default function Statistics() {
           transformTotalCount={false}
         />
       </div>
-
       <div className="graph">
         <img
           className="graphPic"

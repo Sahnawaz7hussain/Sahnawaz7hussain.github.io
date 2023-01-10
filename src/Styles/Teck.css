@@ -1,16 +1,3 @@
-#teck {
-  background-color: #090514;
-  /* border: 3px solid red; */
-  width: 100%;
-  padding-top: 40px;
-  padding-left: 10%;
-  padding-right: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .headingTeck {
   text-align: center;
   margin: auto;
@@ -26,6 +13,18 @@
   margin: auto;
   margin-bottom: 25px;
   border: 2px solid #dd9a05;
+}
+#teck {
+  background-color: #090514;
+  /* border: 3px solid red; */
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .iconsContainer {
@@ -52,7 +51,7 @@
   background-color: #291b50;
   -ms-transform: scale(1); /* IE 9 */
   -webkit-transform: scale(1); /* Safari 3-8 */
-  transform: scale(1.1);
+  transform: scale(1.01);
   border-radius: 5px;
 }
 .title {
