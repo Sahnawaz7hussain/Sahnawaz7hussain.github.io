@@ -60,6 +60,9 @@
   transform: scale(1.01);
   border-radius: 5px;
 }
+/* .box:nth-child(3):hover {
+  background: var(--desktopPrimary);
+} */
 .title {
   color: white;
   text-align: center;
