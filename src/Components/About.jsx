@@ -9,17 +9,22 @@ export default function About() {
       <div className="aboutContainer">
         <img className="codeGif" src={codeGif} alt="codeGif" />
         <div className="paraContainer">
-          <p className="para">
+          {/* <p className="para">
             I'm a Full Stack Web Developer located in Bihar. I have serious
             passion for creating intuitive and dynamic websites with best
             features.{" "}
+          </p> */}
+          <p className="para">
+            I'm a Full Stack Web Developer located in Bihar. I'm passionate
+            about creating intuitive and dynamic websites with MERN stack and
+            the best features.
           </p>
           <p className="para">
             Well organised person, problem solver with high attention to details
-            and ability to exploring and implementing new things,
+            and ability to exploring and implementing new things.
           </p>
           <p className="para">
-            Intrested In: Coding | Data Structure & Algorithms | Playing
+            Intrested In - Coding | Data Structure & Algorithms | Playing
             Badminton | Reading Books | Biographical Movies.{" "}
           </p>
         </div>
