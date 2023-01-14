@@ -1,3 +1,8 @@
+:root {
+  --desktopPrimary: #fc4445;
+  --desktopPrimaryHoger: #a33327;
+}
+
 .homeContainer {
   height: 620px;
   width: auto;
@@ -31,7 +36,8 @@
   font-family: "Roboto", sans-serif;
 }
 .headingContainer h1 {
-  color: #dd9a05;
+  /* color: #dd9a05; */
+  color: var(--desktopPrimary);
   font-size: 42px;
   /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
   letter-spacing: 1.2px;
@@ -40,18 +46,17 @@
 .resumeBtn {
   border: none;
   color: white;
-  background-color: #dd9a05;
-  border: 2px solid #dd9a05;
+  /* background-color: #dd9a05; */
+  background-color: var(--desktopPrimary);
+  border: 2px solid var(--desktopPrimary);
   border-radius: 7px;
   font-size: 16px;
   padding: 10px 14px;
   margin-top: 40px;
 }
 .resumeBtn:hover {
-  border: none;
-  color: #dd9a05;
-  background-color: #090514;
-  border: 2px solid #dd9a05;
+  border: 2px solid var(--desktopPrimaryHoger);
+  background-color: var(--desktopPrimaryHoger);
   cursor: pointer;
 }
 .profileContainer {

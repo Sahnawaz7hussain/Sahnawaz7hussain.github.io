@@ -1,3 +1,8 @@
+:root {
+  --desktopPrimary: #fc4445;
+  /* --desktopPrimary: #a33327; */
+}
+
 .contactContainer {
   height: auto;
   width: auto;
@@ -20,7 +25,7 @@
   width: 12%;
   margin: auto;
   margin-bottom: 30px;
-  border: 2px solid #dd9a05;
+  border: 2px solid var(--desktopPrimary);
 }
 .paraC {
   color: white;
@@ -49,7 +54,7 @@
   /* border: 1px solid blue; */
 }
 .iconss {
-  color: #dd9a05;
+  color: var(--desktopPrimary);
   font-size: 35px;
 }
 .commonCBox p a,
@@ -71,7 +76,7 @@
 }
 .inputBox {
   display: block;
-  border: 1.5px solid #dd9a05;
+  border: 1.5px solid var(--desktopPrimary);
   width: 100%;
   height: 40px;
   background-color: black;
@@ -85,7 +90,7 @@ textArea {
   display: block;
   width: 100%;
   height: 250px;
-  border: 2px solid #dd9a05;
+  border: 2px solid var(--desktopPrimary);
   background-color: black;
   margin-bottom: 15px;
   box-sizing: border-box;
@@ -97,12 +102,12 @@ textArea {
   border: 2px solid blue;
 } */
 .submitButton {
-  background-color: #dd9a05;
+  background-color: var(--desktopPrimary);
   color: white;
   font-size: 18px;
   padding: 10px 14px;
   border-radius: 8px;
-  border: 2px solid #dd9a05;
+  border: 2px solid var(--desktopPrimary);
   letter-spacing: 1px;
   font-weight: 100;
   display: block;
@@ -110,8 +115,8 @@ textArea {
 }
 .submitButton:hover {
   background-color: black;
-  color: #dd9a05;
-  border: 2px solid #dd9a05;
+  color: var(--desktopPrimary);
+  border: 2px solid var(--desktopPrimary);
   cursor: pointer;
 }
 .copyright {
@@ -218,7 +223,7 @@ textArea {
   z-index: 20;
 }
 .icon-style {
-  background-color: #551b54;
+  background-color: var(--desktopPrimary);
   border: 1px solid #fff;
   border-radius: 50%;
   height: 40px;
@@ -231,8 +236,8 @@ textArea {
 .icon-style:hover {
   animation: none;
   background: #fff;
-  color: #551b54;
-  border: 2px solid #551b54;
+  color: var(--desktopPrimary);
+  border: 2px solid var(--desktopPrimary);
 }
 @keyframes movebtn {
   0% {

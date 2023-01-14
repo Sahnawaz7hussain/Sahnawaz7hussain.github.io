@@ -1,3 +1,8 @@
+:root {
+  --desktopPrimary: #fc4445;
+  /* --desktopPrimary: #a33327; */
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -6,7 +11,8 @@
 .nav {
   height: 80px;
   width: auto;
-  background-color: #dd9a05;
+  /* background-color: #dd9a05; */
+  background-color: var(--desktopPrimary);
   display: flex;
   align-items: center;
   justify-content: space-between;

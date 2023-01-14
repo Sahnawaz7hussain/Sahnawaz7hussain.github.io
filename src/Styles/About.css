@@ -1,3 +1,8 @@
+:root {
+  --desktopPrimary: #fc4445;
+  --desktopPrimaryHover: #a33327;
+}
+
 .mainContainer {
   height: 550px;
   width: auto;
@@ -8,7 +13,7 @@
 .heading {
   text-align: center;
   margin: auto;
-  color: white;
+  color: rgb(53, 53, 230);
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* margin-top: 40px; */
@@ -18,7 +23,8 @@
   width: 200px;
   margin: auto;
   margin-bottom: 35px;
-  border: 2px solid #dd9a05;
+  border: 5px solid red;
+  /* border: 2px solid var(--desktopPrimary); */
 }
 .aboutContainer {
   width: 90%;

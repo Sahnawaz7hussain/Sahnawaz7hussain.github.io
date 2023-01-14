@@ -1,3 +1,8 @@
+:root {
+  --desktopPrimary: #fc4445;
+  /* --desktopPrimary: #a33327; */
+}
+
 .heading {
   text-align: center;
   margin: auto;
@@ -12,7 +17,8 @@
   width: 8%;
   margin: auto;
   margin-bottom: 15px;
-  border: 2px solid #dd9a05;
+  border: 2px solid var(--desktopPrimary);
+  /* border: 2px solid #dd9a05; */
 }
 .main {
   padding-top: 40px;

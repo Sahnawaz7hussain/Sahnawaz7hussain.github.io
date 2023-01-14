@@ -31,7 +31,7 @@ const logos = [
 export default function Teck() {
   return (
     <div id="teck">
-      <h1 className="headingTeck">Technologies I've worked on</h1>
+      <h1 className="headingTeck">Skills</h1>
       <hr className="lineTeck" />
       <div className="iconsContainer">
         {logos.map((el) => (

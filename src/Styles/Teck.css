@@ -1,3 +1,8 @@
+:root {
+  --desktopPrimary: #fc4445;
+  /* --desktopPrimary: #a33327; */
+}
+
 .headingTeck {
   text-align: center;
   margin: auto;
@@ -9,10 +14,11 @@
   margin-bottom: 6px;
 }
 .lineTeck {
-  width: 300px;
+  width: 40px;
   margin: auto;
   margin-bottom: 25px;
-  border: 2px solid #dd9a05;
+  /* border: 2px solid #dd9a05; */
+  border: 2px solid var(--desktopPrimary);
 }
 #teck {
   background-color: #090514;

@@ -1,3 +1,8 @@
+:root {
+  --desktopPrimary: #fc4445;
+  /* --desktopPrimary: #a33327; */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +26,8 @@
 .linePro {
   width: 10%;
   margin: auto;
-  border: 2px solid #dd9a05;
+  /* border: 2px solid #dd9a05; */
+  border: 2px solid var(--desktopPrimary);
   /* margin: 10px auto; */
   margin-top: 10px;
   /* margin-bottom: 35px; */
@@ -80,7 +86,8 @@
   padding: 15px 30px;
 }
 .projectHeading {
-  color: #dd9a05;
+  /* color: #dd9a05; */
+  color: var(--desktopPrimary);
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 15px;
@@ -104,7 +111,8 @@
   margin-bottom: 10px;
 }
 .teckSpan {
-  color: #dd9a05;
+  /* color: #dd9a05; */
+  color: var(--desktopPrimary);
   /* margin-top: 15px; */
 }
 
@@ -129,8 +137,9 @@
   justify-content: center;
   color: white;
   margin: auto;
-  background-color: #dd9a05;
-  border: 1px solid #dd9a05;
+  /* background-color: #dd9a05; */
+  background-color: var(--desktopPrimary);
+  border: 1px solid var(--desktopPrimary);
   border-radius: 15px;
   font-size: 20px;
   width: 80%;
@@ -139,9 +148,9 @@
 }
 .live:hover {
   border: none;
-  color: #dd9a05;
+  color: var(--desktopPrimary);
   background-color: #090514;
-  border: 1px solid #dd9a05;
+  border: 1px solid var(--desktopPrimary);
   cursor: pointer;
 }
 
