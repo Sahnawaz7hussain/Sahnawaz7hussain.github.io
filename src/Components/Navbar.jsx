@@ -79,7 +79,7 @@ export default function Navbar() {
             onClick={() => setIsMobile(false)}
             className={isActive === "tech" ? "tech-t isActive" : "tech-t"}
           >
-            Tech
+            Skills
           </li>
         </Link>
         <Link
