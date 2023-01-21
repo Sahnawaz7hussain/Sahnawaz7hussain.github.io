@@ -97,6 +97,7 @@ textArea {
   font-size: 18px;
   padding: 5px 10px;
   color: white;
+  resize: none;
 }
 /* .textArea:focus-visible {
   border: 2px solid blue;

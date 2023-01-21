@@ -4,6 +4,7 @@ import profilePic from "../Images/profile.jpg";
 // import { HiDownload } from "react-icons/fa";
 import { BiDownload } from "react-icons/bi";
 import "../Styles/Home.css";
+// const profilePic = lazy(() => import("../Images/profile.jpg"));
 export default function Home() {
   const onButtonClick = () => {
     fetch("Sahnawaz_Hussain_resume.pdf").then((response) => {
