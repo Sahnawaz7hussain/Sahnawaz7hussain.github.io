@@ -10,6 +10,8 @@ import redux from "../Logos/redux.png";
 import typescript from "../Logos/typescript.png";
 import chakraui from "../Logos/chakra-ui.png";
 import postman from "../Logos/postman.png";
+import mui from "../Logos/mui.png";
+import styledcomponents from "../Logos/styled-component.png";
 
 import git from "../Logos/git.png";
 import "../Styles/Teck.css";
@@ -24,6 +26,8 @@ const logos = [
   { i: redux, t: "Redux" },
   { i: typescript, t: "Typescript" },
   { i: chakraui, t: "ChakraUI" },
+  { i: mui, t: "MaterialUI" },
+  { i: styledcomponents, t: "Styled-Component" },
   { i: git, t: "Git" },
   { i: postman, t: "Postman" },
 ];

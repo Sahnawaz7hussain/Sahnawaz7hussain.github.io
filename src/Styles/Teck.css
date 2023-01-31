@@ -38,7 +38,7 @@
   width: 100%;
   /* border: 2px solid blue; */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 50px;
   margin: auto;
   padding-top: 40px;
@@ -71,6 +71,7 @@
 
 .icon {
   width: 70px;
+  height: 70px;
   border-radius: 10px;
   display: block;
   margin: auto;
@@ -96,7 +97,7 @@
   .iconsContainer {
     /* background-color: purple; */
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     /* border: 2px solid greenyellow; */
   }
@@ -116,7 +117,7 @@
 /* mobile */
 /* Media Query for Mobile Devices */
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   #teck {
     background-color: #800000;
     /* border: 2px solid green; */
