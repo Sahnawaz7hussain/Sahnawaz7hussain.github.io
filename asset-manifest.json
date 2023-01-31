@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f087514.css",
-    "main.js": "/static/js/main.a777e01a.js",
+    "main.css": "/static/css/main.12f67231.css",
+    "main.js": "/static/js/main.c4437058.js",
     "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
     "static/media/bewakoofhomepage.png": "/static/media/bewakoofhomepage.2f2d621e460eb04eec7d.png",
     "static/media/code.gif": "/static/media/code.18bcba89d4290c3f7580.gif",
     "static/media/profile.jpg": "/static/media/profile.5ed5df1092b44856388d.jpg",
     "static/media/MusicApp.png": "/static/media/MusicApp.635a08b6556a9325f049.png",
     "static/media/CartFunctionality.png": "/static/media/CartFunctionality.e0acde81d0b3aa62d5c7.png",
+    "static/media/netlifyl.png": "/static/media/netlifyl.603ef81c872f9df8c343.png",
     "static/media/hello_bonsai.png": "/static/media/hello_bonsai.7f1f58141805b6cf9064.png",
     "static/media/myhourshomepage.png": "/static/media/myhourshomepage.86070539805f47ba84b9.png",
     "static/media/redux.png": "/static/media/redux.fdf287be94ed4133f04c.png",
@@ -22,14 +23,15 @@
     "static/media/chakra-ui.png": "/static/media/chakra-ui.e4c92a384394912925aa.png",
     "static/media/typescript.png": "/static/media/typescript.66c0df1e107f5e631573.png",
     "static/media/html-5.png": "/static/media/html-5.b2db3a7f6897f0a6e75c.png",
+    "static/media/styled-component.png": "/static/media/styled-component.61b1069d3f60b51e426d.png",
     "static/media/css-3.png": "/static/media/css-3.4a6549b8c2b4cda8bb88.png",
     "index.html": "/index.html",
-    "main.5f087514.css.map": "/static/css/main.5f087514.css.map",
-    "main.a777e01a.js.map": "/static/js/main.a777e01a.js.map",
+    "main.12f67231.css.map": "/static/css/main.12f67231.css.map",
+    "main.c4437058.js.map": "/static/js/main.c4437058.js.map",
     "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f087514.css",
-    "static/js/main.a777e01a.js"
+    "static/css/main.12f67231.css",
+    "static/js/main.c4437058.js"
   ]
 }
