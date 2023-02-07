@@ -129,7 +129,7 @@ export default function Contact() {
           <p>+91 7739920196</p>
         </div>
       </div>
-      <p className="copyright">© 2022 Copyright - Sahnawaz Hussain</p>
+      <p className="copyright">Made with by Sahnawaz Hussain</p>
       <div className="top-to-btm">
         {showScrollButton && (
           <FaAngleUp className="icon-position icon-style" onClick={goToTop} />

@@ -17,9 +17,18 @@ export default function Projects() {
       image: hello_bonsai,
       name: "hellobonsai.com",
       desc: "It's a freelance business management application that allows freelancers to work with clients.",
-      techStack: "HTML | CSS | Javascript",
+      techStack: "Reactjs | Reduxjs | NodeJs | Express MongoDB | ChakraUI",
       github: "https://github.com/AnkitParte/astute-line-8992",
       demo: "https://hellobonsai-deploy.vercel.app/",
+    },
+    {
+      image: MusicApp,
+      name: "Simple Music App",
+      desc: " It's a Simple Music app Where user go through musics stored in our server. Focused on Filter and Sorting functionality.",
+      techStack:
+        "ReactJS | Reduxjs | json-server | styled-components| athentication",
+      github: "https://github.com/Sahnawaz7hussain/Music-app",
+      demo: "https://musicapp-rho.vercel.app/",
     },
     {
       image: bewakoof,
@@ -37,14 +46,6 @@ export default function Projects() {
       techStack: "React | ChakraUI | Router",
       github: "https://github.com/Sahnawaz7hussain/annoyed-wind-8656",
       demo: "https://annoyed-wind-8656.vercel.app/",
-    },
-    {
-      image: MusicApp,
-      name: "Simple Music App",
-      desc: " It's a Simple Music app Where user go through musics stored in our server. Focused on Filter and Sorting functionality.",
-      techStack: "ReactJS | Redux | json-server",
-      github: "https://github.com/Sahnawaz7hussain/Music-app",
-      demo: "https://musicapp-rho.vercel.app/",
     },
   ];
   const projects2 = [

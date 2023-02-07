@@ -9,9 +9,11 @@ import express from "../Logos/express.png";
 import redux from "../Logos/redux.png";
 import typescript from "../Logos/typescript.png";
 import chakraui from "../Logos/chakra-ui.png";
-import postman from "../Logos/postman.png";
 import mui from "../Logos/mui.png";
 import styledcomponents from "../Logos/styled-component.png";
+import postman from "../Logos/postman.png";
+import netlify from "../Logos/netlifyl.png";
+import vercel from "../Logos/vercel.png";
 
 import git from "../Logos/git.png";
 import "../Styles/Teck.css";
@@ -20,16 +22,18 @@ const logos = [
   { i: css, t: "CSS" },
   { i: javascript, t: "Javascript" },
   { i: reacticon, t: "ReactJS" },
-  { i: mongodb, t: "MongoDB" },
-  { i: node, t: "NodeJS" },
-  { i: express, t: "ExpressJS" },
   { i: redux, t: "Redux" },
-  { i: typescript, t: "Typescript" },
   { i: chakraui, t: "ChakraUI" },
   { i: mui, t: "MaterialUI" },
   { i: styledcomponents, t: "Styled-Component" },
+  { i: typescript, t: "Typescript" },
+  { i: node, t: "NodeJS" },
+  { i: express, t: "ExpressJS" },
+  { i: mongodb, t: "MongoDB" },
   { i: git, t: "Git" },
   { i: postman, t: "Postman" },
+  { i: netlify, t: "Netlify" },
+  { i: vercel, t: "Vercel" },
 ];
 
 export default function Teck() {

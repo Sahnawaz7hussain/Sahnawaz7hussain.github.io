@@ -74,7 +74,7 @@ export default function Navbar() {
             About
           </li>
         </Link>
-        <Link to="teck" spy={true} smooth={true} offset={-40} duration={500}>
+        <Link to="teck" spy={true} smooth={true} offset={-50} duration={500}>
           <li
             onClick={() => setIsMobile(false)}
             className={isActive === "tech" ? "tech-t isActive" : "tech-t"}
@@ -100,7 +100,7 @@ export default function Navbar() {
           to="statistics"
           spy={true}
           smooth={true}
-          offset={-40}
+          offset={-50}
           duration={700}
         >
           <li
