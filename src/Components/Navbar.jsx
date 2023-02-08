@@ -125,7 +125,8 @@ export default function Navbar() {
             target="_blank"
             rel="noreferrer"
           >
-            Resume <TbExternalLink />
+            Resume{" "}
+            <TbExternalLink fontSize={"15px"} style={{ marginLeft: "-5px" }} />
           </a>
         </li>
       </ul>

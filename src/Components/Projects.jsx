@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "../Styles/Projects.css";
 import bewakoof from "../Images/bewakoofhomepage.png";
 import myhours from "../Images/myhourshomepage.png";
@@ -10,6 +10,8 @@ import todoappp from "../Images/todoApp.png";
 import { TbExternalLink } from "react-icons/tb";
 
 import { useState } from "react";
+import LoadingComponent from "./LoadingComponent";
+const ImageComponent = React.lazy(() => import("./ImageComponent"));
 export default function Projects() {
   const [showP2, setShowP2] = useState(false);
   const projects = [
@@ -26,7 +28,7 @@ export default function Projects() {
       name: "Simple Music App",
       desc: " It's a Simple Music app Where user go through musics stored in our server. Focused on Filter and Sorting functionality.",
       techStack:
-        "ReactJS | Reduxjs | json-server | styled-components| athentication",
+        "ReactJS | Reduxjs | json-server | styled-components | authentication",
       github: "https://github.com/Sahnawaz7hussain/Music-app",
       demo: "https://musicapp-rho.vercel.app/",
     },
@@ -88,7 +90,14 @@ export default function Projects() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="commonPic" src={item.image} alt={item.name} />
+              {/* <img className="commonPic" src={item.image} alt={item.name} /> */}
+              <Suspense fallback={<LoadingComponent />}>
+                <ImageComponent
+                  className={"commonPic"}
+                  src={item.image}
+                  alt={item.name}
+                />
+              </Suspense>
             </a>
             {/* PROJECT DETAILS BOX  */}
             <div className="projectDetails">

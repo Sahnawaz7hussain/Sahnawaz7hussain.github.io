@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { TbExternalLink } from "react-icons/tb";
+import { BsFillHeartFill } from "react-icons/bs";
+import { AiOutlineSend } from "react-icons/ai";
 import "../Styles/Contact.css";
 import {
   AiFillLinkedin,
@@ -12,6 +14,8 @@ import { FaAngleUp } from "react-icons/fa";
 //  MAIN FUNCTION
 export default function Contact() {
   const [showScrollButton, setShowScrollButton] = useState(false);
+
+  // handle submit.
   function handleSubmit(e) {
     setTimeout(() => {
       e.target.reset();
@@ -27,6 +31,8 @@ export default function Contact() {
       }
     });
   }, []);
+
+  // scroll to top.
   const goToTop = () => {
     window.scrollTo({
       top: 0,
@@ -76,9 +82,20 @@ export default function Contact() {
             className="textArea"
           ></textarea>
 
-          <button type="submit" className="submitButton">
-            Send Message
+          {/* <div className="submitBox" type="submit"> */}
+          <button
+            type="submit"
+            className="submitButton"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            Send{" "}
+            <AiOutlineSend fontSize={"16px"} style={{ marginLeft: "10px" }} />
           </button>
+          {/* </div> */}
         </form>
       </div>
 
@@ -129,7 +146,13 @@ export default function Contact() {
           <p>+91 7739920196</p>
         </div>
       </div>
-      <p className="copyright">Made with by Sahnawaz Hussain</p>
+      <p className="copyright">
+        Made with{" "}
+        <span>
+          <BsFillHeartFill fontSize={"14px"} color={"red"} />
+        </span>{" "}
+        by Sahnawaz Hussain
+      </p>
       <div className="top-to-btm">
         {showScrollButton && (
           <FaAngleUp className="icon-position icon-style" onClick={goToTop} />

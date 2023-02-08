@@ -6,7 +6,7 @@
 .contactContainer {
   height: auto;
   width: auto;
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 2px solid rgb(30, 30, 119);
   background-color: black;
   padding-top: 50px;
 }
@@ -76,7 +76,7 @@
 }
 .inputBox {
   display: block;
-  border: 1.5px solid var(--desktopPrimary);
+  border: 1px solid var(--desktopPrimary);
   width: 100%;
   height: 40px;
   background-color: black;
@@ -86,11 +86,17 @@
   padding: 5px 10px;
   color: white;
 }
+.inputBox:focus {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid var(--desktopPrimary);
+  border-radius: 6px;
+}
 textArea {
   display: block;
   width: 100%;
   height: 250px;
-  border: 2px solid var(--desktopPrimary);
+  border: 1px solid var(--desktopPrimary);
   background-color: black;
   margin-bottom: 15px;
   box-sizing: border-box;
@@ -99,13 +105,15 @@ textArea {
   color: white;
   resize: none;
 }
-/* .textArea:focus-visible {
-  border: 2px solid blue;
-} */
+.textArea:focus {
+  outline: none;
+  border: 1px solid var(--desktopPrimary);
+  border-radius: 6px;
+}
 .submitButton {
   background-color: var(--desktopPrimary);
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   padding: 10px 14px;
   border-radius: 8px;
   border: 2px solid var(--desktopPrimary);

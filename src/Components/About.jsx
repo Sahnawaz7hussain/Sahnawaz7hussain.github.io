@@ -1,13 +1,19 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import "../Styles/About.css";
 import codeGif from "../Images/code.gif";
+import LoadingComponent from "./LoadingComponent";
+const ImageComponent = React.lazy(() => import("../Components/ImageComponent"));
+
 export default function About() {
   return (
     <div className="mainContainer" id="about">
       <h1 className="heading">About myself</h1>
       <hr className="line" />
       <div className="aboutContainer">
-        <img className="codeGif" src={codeGif} alt="codeGif" />
+        {/* <img className="codeGif" src={codeGif} alt="codeGif" /> */}
+        <Suspense fallback={<LoadingComponent />}>
+          <ImageComponent className={"codeGif"} src={codeGif} alt={"codeGif"} />
+        </Suspense>
         <div className="paraContainer">
           {/* <p className="para">
             I'm a Full Stack Web Developer located in Bihar. I have serious

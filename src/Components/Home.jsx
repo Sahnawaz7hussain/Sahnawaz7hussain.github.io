@@ -1,10 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import profilePic from "../Images/profile.jpg";
-// import pdf from "../Images/Sahnawaz_Hussain_resume.pdf";
-// import { HiDownload } from "react-icons/fa";
 import { BiDownload } from "react-icons/bi";
 import "../Styles/Home.css";
-// const profilePic = lazy(() => import("../Images/profile.jpg"));
+import LoadingComponent from "./LoadingComponent";
+const ImageComponent = React.lazy(() => import("../Components/ImageComponent"));
 export default function Home() {
   const onButtonClick = () => {
     fetch("Sahnawaz_Hussain_resume.pdf").then((response) => {
@@ -38,7 +37,14 @@ export default function Home() {
         </button>
       </div>
       <div className="profileContainer">
-        <img className="profilePic" src={profilePic} alt="Hero Pic" />
+        {/* <img className="profilePic" src={profilePic} alt="Hero Pic" /> */}
+        <Suspense fallback={<LoadingComponent />}>
+          <ImageComponent
+            className={"profilePic"}
+            src={profilePic}
+            alt="Hero Image"
+          />
+        </Suspense>
       </div>
     </div>
   );

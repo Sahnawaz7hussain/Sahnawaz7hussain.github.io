@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import html from "../Logos/html-5.png";
 import css from "../Logos/css-3.png";
 import reacticon from "../Logos/reactjs.png";
@@ -45,6 +45,7 @@ export default function Teck() {
         {logos.map((el) => (
           <div key={el.i} className="box">
             <img className="icon" src={el.i} alt="iconss" />
+
             <p className="title">{el.t}</p>
           </div>
         ))}
