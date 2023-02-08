@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import html from "../Logos/html-5.png";
 import css from "../Logos/css-3.png";
 import reacticon from "../Logos/reactjs.png";

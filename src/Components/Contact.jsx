@@ -115,7 +115,10 @@ export default function Contact() {
               target="_blank"
               rel="noreferrer"
             >
-              LinkedIn <TbExternalLink />
+              LinkedIn{" "}
+              <TbExternalLink
+                style={{ fontSize: "15px", marginLeft: "-5px" }}
+              />
             </a>
           </p>
         </div>
@@ -133,7 +136,10 @@ export default function Contact() {
               target="_blank"
               rel="noreferrer"
             >
-              Github <TbExternalLink />
+              Github{" "}
+              <TbExternalLink
+                style={{ fontSize: "15px", marginLeft: "-5px" }}
+              />
             </a>
           </p>
         </div>
