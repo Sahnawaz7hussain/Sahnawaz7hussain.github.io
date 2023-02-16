@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: center;
 }
-
+/* ALL SKILLS PARENT CONTAIENR  */
 .iconsContainer {
   height: auto;
   width: 100%;
@@ -44,27 +44,29 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
+/* INDIVIDUAL CHILDREN (SKILLS) */
+
 .box {
   /* background-color: #1a1036; */
   display: block;
   padding: 8px 0px;
-  box-shadow: 0px 4px 5px #757474;
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  box-shadow: 0px 3px 4px var(--desktopPrimary);
   transition: all 0.4s ease-in-out;
-  /* border: 1px solid lightgray; */
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  /* border-radius: 5px; */
+  border-radius: 5px;
 }
 .box:hover {
-  /* background-color: #291b50;/ */
+  box-shadow: none;
   background: var(--desktopPrimary);
   -ms-transform: scale(1); /* IE 9 */
   -webkit-transform: scale(1); /* Safari 3-8 */
   transform: scale(1.01);
 }
-/* .box:nth-child(3):hover {
-  background: var(--desktopPrimary);
+.box:nth-child(11) > img {
+  /* background: blue; */
+  filter: invert(100%);
+}
+/* .iconsContainer:nth-child(11) {
+  background-color: blue;
 } */
 .title {
   color: white;

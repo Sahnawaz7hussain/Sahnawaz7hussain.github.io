@@ -32,6 +32,7 @@
   margin-top: 10px;
   /* margin-bottom: 35px; */
 }
+/* PARENT CONTAINER */
 .allProjects {
   height: auto;
   width: auto;
@@ -42,6 +43,7 @@
   margin-top: 40px;
   margin-bottom: 30px;
 }
+/* INDIVIDUAL CONTAINER (CHILD CONTAINER)  */
 .commonContainer {
   height: auto;
   width: 100%;
@@ -53,6 +55,8 @@
   align-items: center;
   margin-top: 0;
   border-radius: 5px;
+  padding-bottom: 15px;
+  box-shadow: 0 2px 3px var(--desktopPrimary);
 }
 .atag {
   height: 300px;
