@@ -86,12 +86,12 @@
     padding-left: 4%;
     padding-right: 4%;
   }
-  .iconsContainer {
+  /* .iconsContainer {
     width: 85%;
-    /* background-color: purple; */
+  
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-  }
+  } */
   .second {
     padding: 15px;
   }

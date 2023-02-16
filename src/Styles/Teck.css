@@ -22,7 +22,6 @@
 }
 #teck {
   background-color: #090514;
-  /* border: 3px solid red; */
   width: 100%;
   padding-top: 40px;
   padding-left: 10%;
@@ -31,18 +30,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* border: 2px solid blue; */
 }
 /* ALL SKILLS PARENT CONTAIENR  */
 .iconsContainer {
   height: auto;
   width: 100%;
-  /* border: 2px solid blue; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
   margin: auto;
   padding-top: 40px;
   padding-bottom: 40px;
+  /* border: 2px solid green; */
 }
 /* INDIVIDUAL CHILDREN (SKILLS) */
 
@@ -53,21 +53,19 @@
   box-shadow: 0px 3px 4px var(--desktopPrimary);
   transition: all 0.4s ease-in-out;
   border-radius: 5px;
+  cursor: pointer;
 }
 .box:hover {
   box-shadow: none;
   background: var(--desktopPrimary);
   -ms-transform: scale(1); /* IE 9 */
   -webkit-transform: scale(1); /* Safari 3-8 */
-  transform: scale(1.01);
+  transform: scale(1.05);
 }
 .box:nth-child(11) > img {
-  /* background: blue; */
   filter: invert(100%);
 }
-/* .iconsContainer:nth-child(11) {
-  background-color: blue;
-} */
+
 .title {
   color: white;
   text-align: center;
@@ -87,24 +85,26 @@
 
 @media screen and (max-width: 1200px) {
   #teck {
-    padding-left: 5%;
-    padding-right: 5%;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    background-color: #882673;
   }
 }
+
 /* Media Query for low resolution  Tablets, Ipads */
 @media screen and (max-width: 820px) {
   #teck {
     background-color: #0b172a;
     padding-top: 20px;
-    padding-left: 2%;
-    padding-right: 2%;
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
   }
   .iconsContainer {
     /* background-color: purple; */
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    /* border: 2px solid greenyellow; */
   }
   .box {
     background-color: #031d41;
@@ -125,21 +125,18 @@
 @media screen and (max-width: 480px) {
   #teck {
     background-color: #800000;
-    /* border: 2px solid green; */
-    padding-left: 1%;
-    padding-right: 1%;
-    /* padding: 0; */
+    /* border: 2px solid green;  */
+    /* padding-left: 2%;
+    padding-right: 2%; */
   }
 
   .iconsContainer {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    /* border: 2px solid blue; */
+    /* border: 2px solid white; */
   }
-  .iconBox {
-    padding-top: 0px;
-  }
+
   .box {
     background-color: #a52a2a;
   }
@@ -156,6 +153,6 @@
     margin-bottom: 15px;
   }
   .icon {
-    width: 55px;
+    width: 50%;
   }
 }

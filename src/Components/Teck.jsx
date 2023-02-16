@@ -45,7 +45,6 @@ export default function Teck() {
         {logos.map((el) => (
           <div key={el.i} className="box">
             <img className="icon" src={el.i} alt="iconss" />
-
             <p className="title">{el.t}</p>
           </div>
         ))}
