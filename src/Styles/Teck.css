@@ -45,20 +45,23 @@
   padding-bottom: 40px;
 }
 .box {
-  background-color: #1a1036;
+  /* background-color: #1a1036; */
   display: block;
   padding: 8px 0px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-  transition: all 0.7s ease-in-out;
-  border: 1px solid lightgray;
+  box-shadow: 0px 4px 5px #757474;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  transition: all 0.4s ease-in-out;
+  /* border: 1px solid lightgray; */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* border-radius: 5px; */
 }
 .box:hover {
-  background-color: #291b50;
+  /* background-color: #291b50;/ */
+  background: var(--desktopPrimary);
   -ms-transform: scale(1); /* IE 9 */
   -webkit-transform: scale(1); /* Safari 3-8 */
   transform: scale(1.01);
-  border-radius: 5px;
 }
 /* .box:nth-child(3):hover {
   background: var(--desktopPrimary);
