@@ -56,6 +56,7 @@
 .iconss {
   color: var(--desktopPrimary);
   font-size: 35px;
+  cursor: pointer;
 }
 .commonCBox p a,
 .commonCBox p {
@@ -63,6 +64,7 @@
   color: white;
   font-size: 20px;
   text-align: center;
+  cursor: pointer;
 }
 /*Form css */
 .formBox {

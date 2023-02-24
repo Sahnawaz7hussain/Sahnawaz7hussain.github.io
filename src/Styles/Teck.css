@@ -85,9 +85,8 @@
 
 @media screen and (max-width: 1200px) {
   #teck {
-    /* padding-left: 5%;
-    padding-right: 5%; */
-    background-color: #882673;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
