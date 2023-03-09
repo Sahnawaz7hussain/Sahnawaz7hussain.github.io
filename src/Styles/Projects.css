@@ -72,6 +72,7 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .commonPic:hover {

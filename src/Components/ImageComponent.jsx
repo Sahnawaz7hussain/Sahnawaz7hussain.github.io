@@ -6,8 +6,8 @@ import "../Styles/Projects.css";
 import "../Styles/Teck.css";
 import "../Styles/Statistics.css";
 
-const ImageComponent = ({ src, alt = "Image", className }) => {
-  return <img className={className} src={src} alt={alt} />;
+const ImageComponent = ({ src, alt = "Image", className, title = "" }) => {
+  return <img title={title} className={className} src={src} alt={alt} />;
 };
 
 export default ImageComponent;

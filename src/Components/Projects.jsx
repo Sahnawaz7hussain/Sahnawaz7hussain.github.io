@@ -9,11 +9,11 @@ import MusicApp from "../Images/MusicApp.png";
 import todoappp from "../Images/todoApp.png";
 import { TbExternalLink } from "react-icons/tb";
 
-import { useState } from "react";
+// import { useState } from "react";
 import LoadingComponent from "./LoadingComponent";
 const ImageComponent = React.lazy(() => import("./ImageComponent"));
 export default function Projects() {
-  const [showP2, setShowP2] = useState(false);
+  // const [showP2, setShowP2] = useState(false);
   const projects = [
     {
       image: hello_bonsai,
@@ -96,6 +96,7 @@ export default function Projects() {
                   className={"commonPic"}
                   src={item.image}
                   alt={item.name}
+                  title={"Open link in new tab."}
                 />
               </Suspense>
             </a>

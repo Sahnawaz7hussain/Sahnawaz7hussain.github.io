@@ -23,7 +23,11 @@ export default function Home() {
         <p>Hello, I'm</p>
         <h2>Sahnawaz Hussain</h2>
         <h1>Full Stack Web Developer.</h1>
-        <button onClick={onButtonClick} className="resumeBtn">
+        <button
+          title="Download resume"
+          onClick={onButtonClick}
+          className="resumeBtn"
+        >
           Resume{" "}
           <span>
             <BiDownload

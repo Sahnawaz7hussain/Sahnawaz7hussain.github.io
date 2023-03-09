@@ -60,6 +60,7 @@ export default function Navbar() {
       >
         <Link to="hero" spy={true} smooth={true} offset={-45} duration={500}>
           <li
+            title="Move to Home"
             onClick={() => setIsMobile(false)}
             className={isActive === "home" ? "tech-t isActive" : "tech-t"}
           >
@@ -68,6 +69,7 @@ export default function Navbar() {
         </Link>
         <Link to="about" spy={true} smooth={true} offset={-40} duration={500}>
           <li
+            title="Move to About"
             onClick={() => setIsMobile(false)}
             className={isActive === "about" ? "tech-t isActive" : "tech-t"}
           >
@@ -76,6 +78,7 @@ export default function Navbar() {
         </Link>
         <Link to="teck" spy={true} smooth={true} offset={-50} duration={500}>
           <li
+            title="Move to Skills"
             onClick={() => setIsMobile(false)}
             className={isActive === "tech" ? "tech-t isActive" : "tech-t"}
           >
@@ -90,6 +93,7 @@ export default function Navbar() {
           duration={500}
         >
           <li
+            title="Move to Projects"
             onClick={() => setIsMobile(false)}
             className={isActive === "projects" ? "tech-t isActive" : "tech-t"}
           >
@@ -104,6 +108,7 @@ export default function Navbar() {
           duration={700}
         >
           <li
+            title="Move to Statistics"
             onClick={() => setIsMobile(false)}
             className={isActive === "statistics" ? "tech-t isActive" : "tech-t"}
           >
@@ -112,6 +117,7 @@ export default function Navbar() {
         </Link>
         <Link to="contact" spy={true} smooth={true} offset={-40} duration={700}>
           <li
+            title="Move to Contact"
             onClick={() => setIsMobile(false)}
             className={isActive === "contact" ? "tech-t isActive" : "tech-t"}
           >
@@ -120,7 +126,11 @@ export default function Navbar() {
         </Link>
         <li className="tech-t">
           <a
-            style={{ textDecoration: "none", color: "white" }}
+            title="Open resume in new tab."
+            style={{
+              textDecoration: "none",
+              color: "white",
+            }}
             href="https://drive.google.com/file/d/1BWoSLBpHKFxYBiQAKRW2U7Z5fFSWVzHN/view?usp=sharing"
             target="_blank"
             rel="noreferrer"

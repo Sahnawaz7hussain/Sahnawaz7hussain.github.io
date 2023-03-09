@@ -100,7 +100,7 @@ export default function Contact() {
       </div>
 
       <div className="cBox">
-        <div className="commonCBox">
+        <div title="Go to linkedIn." className="commonCBox">
           <a
             href="https://www.linkedin.com/in/sahnawaz-hussain-350508219/"
             target="_blank"
@@ -122,7 +122,7 @@ export default function Contact() {
             </a>
           </p>
         </div>
-        <div className="commonCBox">
+        <div title="Go to my github." className="commonCBox">
           <a
             href="https://github.com/Sahnawaz7hussain"
             target="_blank"
@@ -143,11 +143,11 @@ export default function Contact() {
             </a>
           </p>
         </div>
-        <div className="commonCBox">
+        <div title="My professional email." className="commonCBox">
           <AiOutlineMail className="iconss" />
           <p>sahnawazhussain852@gmail.com</p>
         </div>
-        <div className="commonCBox">
+        <div title="Direct call or whatsapp" className="commonCBox">
           <AiOutlineWhatsApp className="iconss" />
           <p>+91 7739920196</p>
         </div>
@@ -161,7 +161,11 @@ export default function Contact() {
       </p>
       <div className="top-to-btm">
         {showScrollButton && (
-          <FaAngleUp className="icon-position icon-style" onClick={goToTop} />
+          <FaAngleUp
+            title="Go to top."
+            className="icon-position icon-style"
+            onClick={goToTop}
+          />
         )}
       </div>
     </div>

@@ -29,7 +29,7 @@ export default function Statistics() {
       </div>
       <br />
       <br />
-      <div className="second">
+      <div title="Days I Code." className="second">
         <GitHubCalendar
           style={{
             color: "white",

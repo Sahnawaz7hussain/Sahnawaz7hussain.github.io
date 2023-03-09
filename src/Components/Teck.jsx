@@ -43,9 +43,11 @@ export default function Teck() {
       <hr className="lineTeck" />
       <div className="iconsContainer">
         {logos.map((el) => (
-          <div key={el.i} className="box">
+          <div title={`${el.t}`} key={el.i} className="box">
             <img className="icon" src={el.i} alt="iconss" />
-            <p className="title">{el.t}</p>
+            <p title={`${el.t}`} className="title">
+              {el.t}
+            </p>
           </div>
         ))}
       </div>
