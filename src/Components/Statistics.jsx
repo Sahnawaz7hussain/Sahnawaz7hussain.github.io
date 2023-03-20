@@ -39,7 +39,7 @@ export default function Statistics() {
           blockMargin={4}
           blockRadius={8}
           blockSize={14}
-          color={wWidth <= 480 ? "" : "#FD428D"}
+          color={"#FD428D"}
           hideTotalCount={wWidth <= 480 ? true : false}
           fontSize={16}
           transformTotalCount={false}

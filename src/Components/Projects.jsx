@@ -11,6 +11,7 @@ import { TbExternalLink } from "react-icons/tb";
 
 // import { useState } from "react";
 import LoadingComponent from "./LoadingComponent";
+import { Link } from "react-router-dom";
 const ImageComponent = React.lazy(() => import("./ImageComponent"));
 export default function Projects() {
   // const [showP2, setShowP2] = useState(false);
@@ -183,17 +184,27 @@ export default function Projects() {
               </div>
             </div>
           ))}
+
+        </div> */}
+      <Link style={{ textDecoration: "none" }} to="/projects">
         <button
-          className={`live atag`}
+          // className={`live atag`}
           style={{
             display: "block",
             margin: "auto",
+            padding: "8px 12px",
+            background: "#fc4445",
+            border: "1px solid transparent",
+            color: "#fff",
+            fontSize: "18px",
+            cursor: "pointer",
+            borderRadius: "4px",
+            marginBottom: "15px",
           }}
-          onClick={() => setShowP2(!showP2)}
         >
-          {showP2 ? "Show Less" : "Show More"}
+          More projects
         </button>
-      </div> */}
+      </Link>
     </div>
   );
 }

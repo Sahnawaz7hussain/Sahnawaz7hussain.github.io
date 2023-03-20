@@ -9,17 +9,21 @@ import Statistics from "./Components/Statistics";
 
 import CustomCursor from "custom-cursor-react";
 import "custom-cursor-react/dist/index.css";
+import MainHome from "./pages/MainHome";
+import { Route, Routes } from "react-router-dom";
+import MainProjects from "./pages/MainProjects";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar />
       <Home />
       <About />
       <Teck />
       <Projects />
       <Statistics />
       <Contact />
+      */}
       <CustomCursor
         targets={[".link", ".your-css-selector"]}
         customClass="custom-cursor"
@@ -34,6 +38,10 @@ function App() {
         }}
         targetOpacity={0.5}
       />
+      <Routes>
+        <Route path="/" element={<MainHome />} />
+        <Route path="/projects" element={<MainProjects />} />
+      </Routes>
     </div>
   );
 }

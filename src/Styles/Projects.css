@@ -160,6 +160,14 @@
   cursor: pointer;
 }
 
+.allProjectsHeading {
+  color: white;
+}
+
+.allProjectsHeading span {
+  color: var(--desktopPrimary);
+}
+
 /* Media Query for Tablets Ipads portrait mode completed */
 
 @media screen and (max-width: 1200px) {
@@ -272,6 +280,13 @@
     border: 0px solid white;
   }
   .teckSpan {
+    color: #dd9a05;
+  }
+  .allProjectsHeading {
+    font-size: 25px;
+    margin-bottom: 8px;
+  }
+  .allProjectsHeading span {
     color: #dd9a05;
   }
   .linkingBtn {
