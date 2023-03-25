@@ -8,10 +8,12 @@ import Contact from "../Components/Contact";
 import Statistics from "../Components/Statistics";
 import CustomCursor from "custom-cursor-react";
 import "custom-cursor-react/dist/index.css";
+import ScrollIndicator from "../Components/ScrollIndicator";
 const MainHome = () => {
   return (
     <div>
       <Navbar />
+      <ScrollIndicator />
       <Home />
       <About />
       <Teck />

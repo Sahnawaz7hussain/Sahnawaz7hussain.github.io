@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import profilePic from "../Images/profile.jpg";
+import profilePic from "../Images/profile.png";
 import { BiDownload } from "react-icons/bi";
 import "../Styles/Home.css";
 import LoadingComponent from "./LoadingComponent";

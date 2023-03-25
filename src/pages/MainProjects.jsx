@@ -4,7 +4,7 @@ import cartWebsite from "../Images/CartFunctionality.png";
 import todoappp from "../Images/todoApp.png";
 import "../Styles/Projects.css";
 import { TbExternalLink } from "react-icons/tb";
-import { BsFillTriangleFill } from "react-icons/bs";
+// import { BsFillTriangleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 const MainProjects = () => {
   const projects = [
@@ -43,8 +43,7 @@ const MainProjects = () => {
         }}
       >
         <h1 className="allProjectsHeading">
-          My Creative <span>Projects </span>
-          <BsFillTriangleFill fontSize={"16"} />
+          My Creative <span>Projects.</span>
         </h1>
         <Link style={{ textDecoration: "none", color: "inherit" }} to="/">
           <h1 className="allProjectsHeading">Home</h1>

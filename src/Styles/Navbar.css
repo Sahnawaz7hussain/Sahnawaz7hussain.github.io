@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 .nav {
-  height: 80px;
+  height: 75px;
   width: auto;
   /* background-color: #dd9a05; */
   background-color: var(--desktopPrimary);
@@ -20,7 +20,7 @@
   z-index: 10;
   position: sticky;
   top: 0;
-  transition: 0.8s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .navColor {
   background-color: #090514;
