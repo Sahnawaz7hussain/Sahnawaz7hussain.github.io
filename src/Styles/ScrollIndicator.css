@@ -1,7 +1,7 @@
 .scollIndicator {
   height: 8px;
   width: 100%;
-  background: rgb(68, 67, 67);
+  background: rgb(163, 162, 162);
   position: fixed;
   top: calc(0+75px);
   right: 0;

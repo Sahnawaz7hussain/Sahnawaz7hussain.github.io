@@ -26,16 +26,16 @@ export default function Navbar() {
         setIsActive("home");
       } else if (x > 600 && x < 1150) {
         setIsActive("about");
-      } else if (x > 1200 && x < 1900) {
+      } else if (x > 1160 && x < 1900) {
         setIsActive("tech");
-      } else if (x > 2000 && x < 3330) {
+      } else if (x > 1970 && x < 3330) {
         setIsActive("projects");
-      } else if (x > 3360 && x < 4100) {
+      } else if (x > 3340 && x < 4100) {
         setIsActive("statistics");
       } else if (x > 4180) {
         setIsActive("contact");
       }
-      //   console.log("scrolll: ", x);
+      console.log("scrolll: ", x);
     });
   }, []);
   //  console.log("atice: ", isActive);
