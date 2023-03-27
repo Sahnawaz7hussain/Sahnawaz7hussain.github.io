@@ -1,18 +1,49 @@
 import React from "react";
+import { TbExternalLink } from "react-icons/tb";
+import "../Styles/Projects.css";
+import { Link } from "react-router-dom";
+// thumbnails import
 import MusicApp from "../Images/MusicApp.png";
 import cartWebsite from "../Images/CartFunctionality.png";
 import todoappp from "../Images/todoApp.png";
-import "../Styles/Projects.css";
-import { TbExternalLink } from "react-icons/tb";
-// import { BsFillTriangleFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import finest from "../Images/finest.png";
+import job_nest from "../Images/job_nest.png";
+import chatzapp from "../Images/chatzapp.png";
+// import hellobonzai from "../Images/hello_bonsai.png";
+
+// projects
 const MainProjects = () => {
   const projects = [
+    {
+      image: finest,
+      name: "Finest (Ecom. website)",
+      desc: "Finest is an online E-commerse retailer which sells fruits and vegetables online, from its own home lines and from a variety of different category. In this article we will conduct a brief website analysis of the BigBasket website.",
+      techStack: "ReactJS | Redux | Nodejs | Expressjs | MongoDB | Chakra-ui",
+      github: "https://github.com/Sahnawaz7hussain/dependent-account-1105",
+      demo: "https://finest-frontend.vercel.app/",
+    },
+    {
+      image: job_nest,
+      name: "Job nest",
+      desc: "This is a recruitment platform that provides hiring-related services to corporates/recruiters, placement agencies, and job seekers in India and overseas. It offers multiple products like Resume Database Access, Job Listings.",
+      techStack: "ReactJS | Redux | json-server | Chakra-ui",
+      github: "https://github.com/Sahnawaz7hussain/job_nest",
+      demo: "https://the-awesome-ajay-thakur-site-975bd.netlify.app",
+    },
+    {
+      image: chatzapp,
+      name: "ChatzApp",
+      desc: "chatzApp is web application where users can chat each other and room chat, easy to use notifications system etc.",
+      techStack:
+        "ReactJS | Redux | Nodejs | Expressjs | MongoDB | React-bootstrap",
+      github: "https://github.com/Sahnawaz7hussain/ChatzApp",
+      demo: "https://chatzapp.vercel.app",
+    },
     {
       image: MusicApp,
       name: "Simple Music App",
       desc: " It's a Simple Music app Where user go through musics stored in our server. Focused on Filter and Sorting functionality.",
-      techStack: "ReactJS | Redux | json-server",
+      techStack: "ReactJS | Redux | json-server | styled-components",
       github: "https://github.com/Sahnawaz7hussain/Music-app",
       demo: "https://musicapp-rho.vercel.app/",
     },
@@ -59,7 +90,12 @@ const MainProjects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="commonPic" src={item.image} alt={item.name} />
+              <img
+                title={`Open ${item.name} in new tab`}
+                className="commonPic"
+                src={item.image}
+                alt={item.name}
+              />
               {/* <Suspense fallback={<LoadingComponent />}>
                 <ImageComponent
                   className={"commonPic"}

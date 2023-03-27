@@ -51,32 +51,6 @@ export default function Projects() {
       demo: "https://annoyed-wind-8656.vercel.app/",
     },
   ];
-  const projects2 = [
-    {
-      image: MusicApp,
-      name: "Simple Music App",
-      desc: " It's a Simple Music app Where user go through musics stored in our server. Focused on Filter and Sorting functionality.",
-      techStack: "ReactJS | Redux | json-server",
-      github: "https://github.com/Sahnawaz7hussain/Music-app",
-      demo: "https://musicapp-rho.vercel.app/",
-    },
-    {
-      image: cartWebsite,
-      name: "Product Website",
-      desc: "It's a Simple Product website. Focused on complete cart functionality.",
-      techStack: "ReactJS | Redux | json-server",
-      github: "https://github.com/Sahnawaz7hussain/product-website",
-      demo: "https://product-webiste.vercel.app/",
-    },
-    {
-      image: todoappp,
-      name: "Todo App",
-      desc: "It's a basic Todo App In this App User Can do complete CRUD operation.",
-      techStack: "ReactJS | ContextAPI | json-server",
-      github: "https://github.com/Sahnawaz7hussain/Todo_crud_with_context_api",
-      demo: "https://todo-crud-nine.vercel.app/",
-    },
-  ];
   return (
     <div id="projects" className="pro">
       <h1 className="headingPro">My Projects</h1>
@@ -97,7 +71,7 @@ export default function Projects() {
                   className={"commonPic"}
                   src={item.image}
                   alt={item.name}
-                  title={"Open link in new tab."}
+                  title={`Open ${item.name} in new tab`}
                 />
               </Suspense>
             </a>
@@ -144,50 +118,9 @@ export default function Projects() {
         ))}
       </div>
 
-      {/* <div>
-        {showP2 &&
-          projects2.map((item) => (
-            <div key={item.name} className="commonContainer">
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                href={`${item.demo}`}
-                className="atag"
-              >
-                <img className="commonPic" src={item.image} alt={item.name} />
-              </a>
-              <div className="projectDetails">
-                <h1 className="projectHeading">Name: {item.name}</h1>
-                <p className="projectPara">{item.desc}</p>
-                <p className="teckStack">
-                  <span className="teckSpan">Tech Stack: </span>
-                  {item.techStack}
-                </p>
-                <div className="linkingBtn">
-                  <a
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    href={`${item.demo}`}
-                    className="atag"
-                  >
-                    <button className="live">Demo</button>
-                  </a>
-                  <a
-                    className="atag"
-                    href={item.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="live">Github</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-
-        </div> */}
       <Link style={{ textDecoration: "none" }} to="/projects">
         <button
+          title="See more projects."
           // className={`live atag`}
           style={{
             display: "block",

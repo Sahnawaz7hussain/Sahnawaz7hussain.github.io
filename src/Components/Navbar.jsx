@@ -38,7 +38,6 @@ export default function Navbar() {
       console.log("scrolll: ", x);
     });
   }, []);
-  //  console.log("atice: ", isActive);
   return (
     <div className={!navBG ? "nav navColor" : "nav"}>
       <div>
