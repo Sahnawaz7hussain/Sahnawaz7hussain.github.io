@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.01559635.css",
-    "main.js": "/static/js/main.4d7750a6.js",
+    "main.css": "/static/css/main.e764459d.css",
+    "main.js": "/static/js/main.6cc8f501.js",
     "static/js/449.18ca5cf6.chunk.js": "/static/js/449.18ca5cf6.chunk.js",
     "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
     "static/media/bewakoofhomepage.png": "/static/media/bewakoofhomepage.2f2d621e460eb04eec7d.png",
@@ -14,7 +14,6 @@
     "static/media/netlifyl.png": "/static/media/netlifyl.603ef81c872f9df8c343.png",
     "static/media/hello_bonsai.png": "/static/media/hello_bonsai.7f1f58141805b6cf9064.png",
     "static/media/job_nest.png": "/static/media/job_nest.e070b98927bfa0f5f234.png",
-    "static/media/myhourshomepage.png": "/static/media/myhourshomepage.86070539805f47ba84b9.png",
     "static/media/redux.png": "/static/media/redux.fdf287be94ed4133f04c.png",
     "static/media/node-js.png": "/static/media/node-js.0f5efdd2a6bfbe1fd818.png",
     "static/media/mongodb.png": "/static/media/mongodb.cd6a10658d1549570fd0.png",
@@ -31,13 +30,13 @@
     "static/media/styled-component.png": "/static/media/styled-component.61b1069d3f60b51e426d.png",
     "static/media/css-3.png": "/static/media/css-3.4a6549b8c2b4cda8bb88.png",
     "index.html": "/index.html",
-    "main.01559635.css.map": "/static/css/main.01559635.css.map",
-    "main.4d7750a6.js.map": "/static/js/main.4d7750a6.js.map",
+    "main.e764459d.css.map": "/static/css/main.e764459d.css.map",
+    "main.6cc8f501.js.map": "/static/js/main.6cc8f501.js.map",
     "449.18ca5cf6.chunk.js.map": "/static/js/449.18ca5cf6.chunk.js.map",
     "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01559635.css",
-    "static/js/main.4d7750a6.js"
+    "static/css/main.e764459d.css",
+    "static/js/main.6cc8f501.js"
   ]
 }
