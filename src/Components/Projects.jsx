@@ -1,13 +1,11 @@
 import React, { Suspense } from "react";
 import "../Styles/Projects.css";
-import bewakoof from "../Images/bewakoofhomepage.png";
-import myhours from "../Images/myhourshomepage.png";
-// import rentomojo from "../Images/rentomojo.png";
-import hello_bonsai from "../Images/hello_bonsai.png";
-import cartWebsite from "../Images/CartFunctionality.png";
-import MusicApp from "../Images/MusicApp.png";
-import todoappp from "../Images/todoApp.png";
 import { TbExternalLink } from "react-icons/tb";
+import bewakoof from "../Images/bewakoofhomepage.png";
+//import myhours from "../Images/myhourshomepage.png";
+import hello_bonsai from "../Images/hello_bonsai.png";
+import MusicApp from "../Images/MusicApp.png";
+import finest from "../Images/finest.png";
 
 // import { useState } from "react";
 import LoadingComponent from "./LoadingComponent";
@@ -17,9 +15,17 @@ export default function Projects() {
   // const [showP2, setShowP2] = useState(false);
   const projects = [
     {
+      image: finest,
+      name: "Finest (Ecom. website)",
+      desc: "Finest is an online E-commerse retailer which sells fruits and vegetables online, from its own home lines and from a variety of different category. In this article we will conduct a brief website analysis of the BigBasket website.",
+      techStack: "ReactJS | Redux | Nodejs | Expressjs | MongoDB | Chakra-ui",
+      github: "https://github.com/Sahnawaz7hussain/dependent-account-1105",
+      demo: "https://finest-frontend.vercel.app/",
+    },
+    {
       image: hello_bonsai,
       name: "hellobonsai.com",
-      desc: "It's a freelance business management application that allows freelancers to work with clients.",
+      desc: "It's a freelance business management application that allows freelancers to work with clients.Like tracking working hours in a project, Managing multiple projects of different clients.",
       techStack: "Reactjs | Reduxjs | NodeJs | Express MongoDB | ChakraUI",
       github: "https://github.com/AnkitParte/astute-line-8992",
       demo: "https://hellobonsai-deploy.vercel.app/",
@@ -36,20 +42,20 @@ export default function Projects() {
     {
       image: bewakoof,
       name: "bewakoof.com",
-      desc: " It's an ecommerce website in which user can buy clothes & kits.",
+      desc: "Clone of bewakoof.com , Bewakoof is a lifestyle fashion brand that makes creative and top-notch apparel for trendy, contemporary Indians.",
       techStack: "HTML | CSS | Javascript",
       github: "https://github.com/11-DEEPAK-KUMAR-11/Bewakoof_website",
       demo: "https://papaya-dango-552c77.netlify.app/",
     },
 
-    {
-      image: myhours,
-      name: "myhours.com",
-      desc: "It's a project management website in which users are managing their projects.",
-      techStack: "React | ChakraUI | Router",
-      github: "https://github.com/Sahnawaz7hussain/annoyed-wind-8656",
-      demo: "https://annoyed-wind-8656.vercel.app/",
-    },
+    // {
+    //   image: myhours,
+    //   name: "myhours.com",
+    //   desc: "It's a project management website in which users are managing their projects.",
+    //   techStack: "React | ChakraUI | Router",
+    //   github: "https://github.com/Sahnawaz7hussain/annoyed-wind-8656",
+    //   demo: "https://annoyed-wind-8656.vercel.app/",
+    // },
   ];
   return (
     <div id="projects" className="pro">
