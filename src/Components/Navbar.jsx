@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { TbExternalLink } from "react-icons/tb";
 import "../Styles/Navbar.css";
-// import profileLogo from "../Images/profile.jpg";
 import shlogo from "../Images/sss.png";
 export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -41,9 +40,8 @@ export default function Navbar() {
   return (
     <div className={!navBG ? "nav navColor" : "nav"}>
       <div>
-        <Link to="hero" spy={true} smooth={true} offset={-40} duration={500}>
+        <Link to="hero" spy={true} smooth={true} offset={-80} duration={500}>
           <i>
-            {/* <h3 className="logo">Sahnawaz Hussain </h3> */}
             <img src={shlogo} className="logo" alt="logo" />
           </i>
         </Link>
@@ -57,7 +55,7 @@ export default function Navbar() {
             : "nav-links"
         }
       >
-        <Link to="hero" spy={true} smooth={true} offset={-45} duration={500}>
+        <Link to="hero" spy={true} smooth={true} offset={-75} duration={500}>
           <li
             title="Move to Home"
             onClick={() => setIsMobile(false)}
