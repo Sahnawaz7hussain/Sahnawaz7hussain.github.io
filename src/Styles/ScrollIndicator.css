@@ -2,7 +2,8 @@
   height: 8px;
   width: 100%;
   background: rgb(163, 162, 162);
-  position: fixed;
+  position: sticky;
+  top: 75px;
   top: calc(0+75px);
   right: 0;
   z-index: 1000000;

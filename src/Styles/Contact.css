@@ -225,7 +225,7 @@ textArea {
 
 /* ////////////////////////////////////  */
 .top-to-btm {
-  position: relative;
+  position: absolute;
 }
 .icon-position {
   position: fixed;

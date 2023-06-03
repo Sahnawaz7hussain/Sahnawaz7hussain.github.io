@@ -3,7 +3,7 @@ import "../Styles/Projects.css";
 import { TbExternalLink } from "react-icons/tb";
 import bewakoof from "../Images/bewakoofhomepage.png";
 //import myhours from "../Images/myhourshomepage.png";
-import hello_bonsai from "../Images/hello_bonsai.png";
+import perfumate from "../Images/perfumate.png";
 import MusicApp from "../Images/MusicApp.png";
 import finest from "../Images/finest.png";
 
@@ -15,20 +15,20 @@ export default function Projects() {
   // const [showP2, setShowP2] = useState(false);
   const projects = [
     {
+      image: perfumate,
+      name: "Perfumate",
+      desc: "Perfumate is an E-commerse web application where we can buy or sell perfumes online .",
+      techStack: "Reactjs | Reduxjs | NodeJs | Express MongoDB | ChakraUI",
+      github: "https://github.com/Sahnawaz7hussain/perfumate",
+      demo: "https://perfumate.vercel.app",
+    },
+    {
       image: finest,
       name: "Finest (Ecom. website)",
-      desc: "Finest is an online E-commerse retailer which sells fruits and vegetables online, from its own home lines and from a variety of different category. In this article we will conduct a brief website analysis of the BigBasket website.",
+      desc: "Finest is an online E-commerse retailer which sells fruits and vegetables online.",
       techStack: "ReactJS | Redux | Nodejs | Expressjs | MongoDB | Chakra-ui",
       github: "https://github.com/Sahnawaz7hussain/dependent-account-1105",
       demo: "https://finest-frontend.vercel.app/",
-    },
-    {
-      image: hello_bonsai,
-      name: "hellobonsai.com",
-      desc: "It's a freelance business management application that allows freelancers to work with clients.Like tracking working hours in a project, Managing multiple projects of different clients.",
-      techStack: "Reactjs | Reduxjs | NodeJs | Express MongoDB | ChakraUI",
-      github: "https://github.com/AnkitParte/astute-line-8992",
-      demo: "https://hellobonsai-deploy.vercel.app/",
     },
     {
       image: MusicApp,

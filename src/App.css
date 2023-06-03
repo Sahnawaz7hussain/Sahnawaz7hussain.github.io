@@ -9,6 +9,10 @@
   box-sizing: border-box;
   cursor: none;
 }
+.App {
+  width: 100%;
+  height: auto;
+}
 
 ::-webkit-scrollbar {
   width: 5px;
