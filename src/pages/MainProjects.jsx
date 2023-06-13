@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 // thumbnails import
 import MusicApp from "../Images/MusicApp.png";
 import cartWebsite from "../Images/CartFunctionality.png";
-import todoappp from "../Images/todoApp.png";
+import bewakoof from "../Images/bewakoofhomepage.png";
 import finest from "../Images/finest.png";
 import job_nest from "../Images/job_nest.png";
 import chatzapp from "../Images/chatzapp.png";
@@ -56,12 +56,12 @@ const MainProjects = () => {
       demo: "https://product-webiste.vercel.app/",
     },
     {
-      image: todoappp,
-      name: "Todo App",
-      desc: "It's a basic Todo App In this App User Can do complete CRUD operation.",
-      techStack: "ReactJS | ContextAPI | json-server",
-      github: "https://github.com/Sahnawaz7hussain/Todo_crud_with_context_api",
-      demo: "https://todo-crud-nine.vercel.app/",
+      image: bewakoof,
+      name: "bewakoof.com",
+      desc: "Clone of bewakoof.com , Bewakoof is a lifestyle fashion brand that makes creative and top-notch apparel for trendy, contemporary Indians.",
+      techStack: "HTML | CSS | Javascript",
+      github: "https://github.com/11-DEEPAK-KUMAR-11/Bewakoof_website",
+      demo: "https://papaya-dango-552c77.netlify.app/",
     },
   ];
   return (

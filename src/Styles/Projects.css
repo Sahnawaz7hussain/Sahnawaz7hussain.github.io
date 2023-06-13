@@ -100,12 +100,13 @@
 
 .projectPara {
   color: rgb(199, 194, 194);
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
   letter-spacing: 1.2px;
-  /* text-align: center; */
-  text-align: justify;
-  text-justify: inter-word;
+  width: 100%;
+  text-align: center;
+  /* text-align: justify;
+  text-justify: distribute-all-lines; */
   margin: auto;
   margin-top: 0;
   width: 100%;

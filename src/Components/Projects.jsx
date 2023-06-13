@@ -1,9 +1,8 @@
 import React, { Suspense } from "react";
 import "../Styles/Projects.css";
 import { TbExternalLink } from "react-icons/tb";
-import bewakoof from "../Images/bewakoofhomepage.png";
-//import myhours from "../Images/myhourshomepage.png";
 import perfumate from "../Images/perfumate.png";
+import havesTales from "../Images/HavenTales.png";
 import MusicApp from "../Images/MusicApp.png";
 import finest from "../Images/finest.png";
 
@@ -12,50 +11,40 @@ import LoadingComponent from "./LoadingComponent";
 import { Link } from "react-router-dom";
 const ImageComponent = React.lazy(() => import("./ImageComponent"));
 export default function Projects() {
-  // const [showP2, setShowP2] = useState(false);
   const projects = [
     {
       image: perfumate,
-      name: "Perfumate",
+      name: "Perfumate(solo)",
       desc: "Perfumate is an E-commerse web application where we can buy or sell perfumes online .",
-      techStack: "Reactjs | Reduxjs | NodeJs | Express MongoDB | ChakraUI",
+      techStack: "Reactjs | Reduxjs | NodeJs | Express | MongoDB | ChakraUI",
       github: "https://github.com/Sahnawaz7hussain/perfumate",
       demo: "https://perfumate.vercel.app",
     },
     {
+      image: havesTales,
+      name: "HavenTales_blog(solo)",
+      desc: "HavenTales is a blog web application where we can read blogs, write, edit and delete blog.",
+      techStack: "HTML | CSS | Reactjs | Nodejs | Express | MongoDB",
+      github: "https://github.com/Sahnawaz7hussain/HavenTales_blog",
+      demo: "https://sh-blog-bay.vercel.app",
+    },
+    {
       image: finest,
-      name: "Finest (Ecom. website)",
-      desc: "Finest is an online E-commerse retailer which sells fruits and vegetables online.",
+      name: "Finest (group)",
+      desc: "Finest is an online E-commerse retailer which sells fruits and vegetables online. Add products in cart, payment methods.",
       techStack: "ReactJS | Redux | Nodejs | Expressjs | MongoDB | Chakra-ui",
       github: "https://github.com/Sahnawaz7hussain/dependent-account-1105",
       demo: "https://finest-frontend.vercel.app/",
     },
     {
       image: MusicApp,
-      name: "Simple Music App",
+      name: "Music App(solo)",
       desc: " It's a Simple Music app Where user go through musics stored in our server. Focused on Filter and Sorting functionality.",
       techStack:
         "ReactJS | Reduxjs | json-server | styled-components | authentication",
       github: "https://github.com/Sahnawaz7hussain/Music-app",
       demo: "https://musicapp-rho.vercel.app/",
     },
-    {
-      image: bewakoof,
-      name: "bewakoof.com",
-      desc: "Clone of bewakoof.com , Bewakoof is a lifestyle fashion brand that makes creative and top-notch apparel for trendy, contemporary Indians.",
-      techStack: "HTML | CSS | Javascript",
-      github: "https://github.com/11-DEEPAK-KUMAR-11/Bewakoof_website",
-      demo: "https://papaya-dango-552c77.netlify.app/",
-    },
-
-    // {
-    //   image: myhours,
-    //   name: "myhours.com",
-    //   desc: "It's a project management website in which users are managing their projects.",
-    //   techStack: "React | ChakraUI | Router",
-    //   github: "https://github.com/Sahnawaz7hussain/annoyed-wind-8656",
-    //   demo: "https://annoyed-wind-8656.vercel.app/",
-    // },
   ];
   return (
     <div id="projects" className="pro">
